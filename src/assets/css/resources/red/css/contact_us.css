@@ -1,0 +1,33 @@
+/* Contact Us */
+#bfw_sub_page_title h1.bfw_page_title {
+	margin-bottom: 10px;
+}
+#bfw_main_content {
+	background: #ffffff url(../../common/images/main_content_bg.gif) top center repeat-y;
+	min-height: 400px;
+	padding-bottom: 8px;
+}
+	#bfw_main_content .bfw_padding {
+		padding: 0 12px;
+	}
+	#bfw_main_content h4.bfw_section_title {
+		font-size: 1.3em;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	#bfw_main_content .bfw_item_list {
+
+	}
+	#bfw_main_content_footer {
+		height: 12px;
+		margin: 0;
+		padding: 0;
+		background: url(../../common/images/main_content_footer_bg.gif) bottom center no-repeat;
+	}
+
+/* Contact Your Rep */
+.bfw_sales_rep_photo img {
+	padding: 4px;
+	border: 1px solid #DDDDDD;
+}
+

@@ -1,0 +1,80 @@
+        th, td {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: large;
+        }
+
+        h1, h2 {
+            font-family: 'trebuchet ms', verdana, arial;
+            padding: 10px;
+            margin: 0;
+        }
+
+        fieldset {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .Panel_remarks fieldset {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            padding-left: 4px !important;
+            padding-right: 18px !important;
+        }
+
+        .Panel_remarks textarea {
+            height: 30px;
+            width: 100%;
+            white-space: normal;
+        }
+
+        input:required, select:required {
+            /*box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);*/
+            border: 1px solid blue;
+        }
+
+        .gridview td {
+            padding: 0px;
+        }
+
+        .checkboxes input {
+            margin: 0px 0px 0px 0px;
+        }
+
+        .checkboxes label {
+            margin: 0px 20px 0px 3px;
+        }
+
+        .checkboxes span {
+            float: left;
+            width: 300px;
+        }
+
+        .transports th {
+            white-space: nowrap;
+        }
+
+        .transports {
+            font-size: 12pt;
+        }
+
+            .transports td {
+                white-space: nowrap;
+            }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+        }
+
+        .agentlogo {
+            width: 90px;
+            max-height: 80px;
+            border-radius: 5px;
+            right: 5px;
+            top: 5px;
+            position: absolute;
+        }

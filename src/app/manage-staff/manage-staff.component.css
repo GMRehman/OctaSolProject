@@ -1,0 +1,12 @@
+.fixed {
+    position: fixed;
+    top: 0;
+}
+.agentlogo {
+    width: 90px;
+    max-height: 80px;
+    border-radius: 5px;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+}

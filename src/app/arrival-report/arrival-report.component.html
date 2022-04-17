@@ -1,0 +1,360 @@
+<html>
+    <head>
+    </head>
+    <body>
+<div id="bfw_content">
+    <!--Common DataSources -->
+
+    
+    
+
+    
+    
+    
+    
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$cphContent$RadScriptManager1', 'Form1', ['tctl00$cphContent$ctl00$cphContent$RadGrid1Panel','','tctl00$cphContent$ctl00SU','cphContent_ctl00SU','tctl00$cphContent$ctl00$cphContent$SavedChangesListPanel',''], ['ctl00$cphContent$RadGrid1',''], [], 90, 'ctl00');
+//]]>
+</script>
+
+<!-- 2014.1.225.45 --><div id="cphContent_ctl00SU" style="display: block;">
+<span id="ctl00_cphContent_ctl00" style="display:none;"></span>
+</div>
+
+
+<script type="text/javascript">
+    function pageLoad() {
+        var grid = $find("ctl00_cphContent_RadGrid1");
+        var columns = grid.get_masterTableView().get_columns();
+        for (var i = 0; i < columns.length; i++) {
+            columns[i].resizeToFit();
+        }
+    }
+</script>
+
+
+<script type="text/javascript">
+const urlParams = new URLSearchParams(window.location.search);
+const GROUPING = urlParams.get('R');
+if (GROUPING) { $('.' + GROUPING).addClass('bfw_current'); }
+else { $('.ALL').addClass('bfw_current'); }
+</script>
+<div id="demo" class="demo-container no-bg">
+
+
+ <div class="dvShowHide" style="width: 800px;">
+        <span id="cphContent_lblReportTitle" class="bfw_text" style="font-size: 20px; font-weight: bold; margin-left: 10px; float: left;">Daily Arrival Report</span>
+     
+    </div>
+    <div id="divSearch" style="width: 800px">
+        <table>
+            <tbody><tr>
+                <td valign="bottom" class="style6">
+                    <span id="cphContent_Label_1" class="bfw_text">From:</span>
+                    <input name="ctl00$cphContent$TXT_From" type="text" id="cphContent_TXT_From" class="TextBox_2 hasDatepicker" style="width:80px;">
+                    <span id="cphContent_RequiredFieldValidator1" style="display:inline-block;width:11px;visibility:hidden;">*</span>
+
+                    <span id="cphContent_Label2" class="bfw_text">To:</span>
+                    <input name="ctl00$cphContent$TXT_to" type="text" id="cphContent_TXT_to" class="TextBox_2 hasDatepicker" style="width:80px;">
+                    <span id="cphContent_RequiredFieldValidator2" style="display:inline-block;width:11px;visibility:hidden;">*</span>
+                </td>
+
+                <td colspan="1" rowspan="3" style="width: 56px">
+                    <input type="submit" name="ctl00$cphContent$btnSearch" value="Search" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphContent$btnSearch&quot;, &quot;&quot;, true, &quot;v1&quot;, &quot;&quot;, false, false))" id="cphContent_btnSearch" class="bfw_float_right bfw_btn bfw_small_margin_bottom" style="width:60px;">
+                </td>
+                <td colspan="1" rowspan="3" class="style8">
+                    <input type="submit" name="ctl00$cphContent$btnNextDay" value=">>" id="cphContent_btnNextDay" title="Next Day" class="bfw_float_right bfw_btn bfw_small_margin_bottom" style="width:20px;">&nbsp;
+            <input type="submit" name="ctl00$cphContent$btnTomorrow" value="Tomorrow Arrival" id="cphContent_btnTomorrow" class="bfw_float_right bfw_btn bfw_small_margin_bottom" style="width:139px;">&nbsp;<input type="submit" name="ctl00$cphContent$btnToday" value="Today Arrival" id="cphContent_btnToday" title="Today Arrival" class="bfw_float_right bfw_btn bfw_small_margin_bottom" style="width:108px;">&nbsp;
+            
+            <input type="submit" name="ctl00$cphContent$btnPreviousDay" value="<<" id="cphContent_btnPreviousDay" title="Previoud Day" class="bfw_float_right bfw_btn bfw_small_margin_bottom" style="width:20px;">&nbsp;
+            <input type="submit" name="ctl00$cphContent$show_all" value="Show All" id="cphContent_show_all" class="bfw_float_right bfw_btn bfw_small_margin_bottom" style="width:80px;">
+                </td>
+            </tr>
+
+        </tbody></table>
+        <table>
+            <tbody><tr>
+               
+                <td>
+                    <div id="cphContent_divParty" style="float: left;">
+                        <span id="cphContent_Label5" class="bfw_text">Party </span>
+                        <select name="ctl00$cphContent$ddlParty" onchange="javascript:setTimeout('__doPostBack(\'ctl00$cphContent$ddlParty\',\'\')', 0)" id="cphContent_ddlParty">
+<option selected="selected" value="ALL">ALL</option>
+<option value="HISKYTRV">HISKYTRV</option>
+<option value="nabeelgoc">nabeelgoc</option>
+<option value="NABEELTRV">NABEELTRV</option>
+<option value="REGENCYTRV">REGENCYTRV</option>
+<option value="REHMANTRV">REHMANTRV</option>
+<option value="ZAHOORTRV">ZAHOORTRV</option>
+
+</select>
+                    </div>
+                </td>
+                <td></td>
+              
+            </tr>
+        </tbody></table>
+    </div>
+
+
+<div>
+
+    <input type="image" name="ctl00$cphContent$ExportToExcel" id="cphContent_ExportToExcel" title="Export To Excel" src="../../assets/css/resources/common/images/MS-Excell-24x24.png">
+
+    <input type="image" name="ctl00$cphContent$ExportToCsv" id="cphContent_ExportToCsv" title="Export To Csv" src="../../assets/css/resources/common/images/MS-CSV-24x24.png">
+
+</div>
+
+&nbsp;
+<div style="float: left; width: 100%; font: small arial;">
+        <a id="btnPrint" class="bfw_link_print" style="float: right; cursor:pointer;" href="#" onclick="return PrintPanel();">Print</a>
+        <hr style="margin-bottom: 5px;">
+    </div>
+ <div id="cphContent_divall" style="width: 100%;">
+ <div id="divPrintheader" style="float: left; width: 100%; font: small arial; text-transform: capitalize; font-size: 10pt; display: none;">
+        <div class="invoice_logo" style="text-align:center">
+            <img src="/css/company/BasmaEmarGroup/logo_small.png" id="cphContent_imgcompanylogo" class="img-polaroid" style="max-height:90px;" alt="BasmaEmarGroup">
+        </div>
+        <span id="cphContent_spanCompany" style="text-align: center; display: inline-block; width: 100%; font-size: 14pt;"></span>
+        <br>
+        <br>
+        <span style="text-align: center; display: inline-block; width: 100%; font-size: 15pt; font-weight: bold;">Daily Arrival Report</span>
+        <br>
+        <div style="float: left;"><span id="cphContent_spanCustomer"></span></div>
+        <div style="float: right; position: relative;  padding-right:20px;"><span id="cphContent_lblprintDate">Print Date:15 Apr 2022 00:04</span></div>
+        <hr>
+    </div>
+   
+     <div style="border:1px solid">
+       <div class="RadAjaxPanel" id="ctl00_cphContent_ctl00_cphContent_SavedChangesListPanel" style="display: block;">
+
+</div>
+<div class="RadAjaxPanel" id="ctl00_cphContent_ctl00_cphContent_RadGrid1Panel" style="display: block;">
+<div id="ctl00_cphContent_RadGrid1" class="RadGrid RadGrid_Office2010Blue" tabindex="0" style="width: 1390px;">
+
+<table class="rgMasterTable" rules="all" border="1" id="ctl00_cphContent_RadGrid1_ctl00" style="width:100%;table-layout:auto;empty-cells:show;">
+<colgroup>
+<col style="width:20px">
+<col>
+<col>
+<col style="width:80px">
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+    <tr>
+        <th scope="col" class="rgHeader rgGroupCol">&nbsp;</th><th scope="col" class="rgHeader">View</th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl00','')">REF#</a></th><th scope="col" class="rgHeader">AGENT NAME</th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl01','')">PASSENGER NAME</a></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl02','')">PAX</a></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl03','')">VEHICLE</a></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl04','')">QTY</a></th><th scope="col" class="rgHeader rgSorted"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl05','')">PICKUP_DATE</a>&nbsp;<input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl06" value=" " onclick="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl06','')" title="Sorted desc" class="rgSortDesc"></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl07','')">TIME</a></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl08','')">SUBROUTE</a></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl09','')">FLIGHT</a></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl10','')">DEST.FROM</a></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl11','')">DEST.TO</a></th><th scope="col" class="rgHeader"><a title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl01$ctl12','')">REMARKS</a></th>
+    </tr><tr class="rgFilterRow">
+        <td>&nbsp;</td><td>&nbsp;</td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_TVOUCHER" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_TVOUCHER" class="rgFilterBox" alt="Filter TVOUCHER column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_TVOUCHER&quot;,&quot;TVOUCHER&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_TVOUCHER&quot;,&quot;TVOUCHER&quot;) }"></td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_PARTY" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_PARTY" class="rgFilterBox" alt="Filter PARTY column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_PARTY&quot;,&quot;PARTY&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_PARTY&quot;,&quot;PARTY&quot;) }" style="width:90%;"></td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_GroupHead_Or_PhoneNo" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_GroupHead_Or_PhoneNo" class="rgFilterBox" alt="Filter GroupHead_Or_PhoneNo column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_GroupHead_Or_PhoneNo&quot;,&quot;GroupHead_Or_PhoneNo&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_GroupHead_Or_PhoneNo&quot;,&quot;GroupHead_Or_PhoneNo&quot;) }"></td><td style="white-space:nowrap;"><span id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RNTBF_NOOFPAX_wrapper" class="riSingle RadInput RadInput_Office2010Blue" style="width:60px;"><input id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RNTBF_NOOFPAX" name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$RNTBF_NOOFPAX" class="riTextBox riEnabled" alt="Filter NOOFPAX column" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RNTBF_NOOFPAX&quot;,&quot;NOOFPAX&quot;, true) }" type="text"><input id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RNTBF_NOOFPAX_ClientState" name="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RNTBF_NOOFPAX_ClientState" type="hidden" autocomplete="off" value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;&quot;,&quot;valueAsString&quot;:&quot;&quot;,&quot;minValue&quot;:-70368744177664,&quot;maxValue&quot;:70368744177664,&quot;lastSetTextBoxValue&quot;:&quot;&quot;}"></span></td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_VEHICLE_TYPE" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_VEHICLE_TYPE" class="rgFilterBox" alt="Filter VEHICLE_TYPE column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_VEHICLE_TYPE&quot;,&quot;VEHICLE_TYPE&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_VEHICLE_TYPE&quot;,&quot;VEHICLE_TYPE&quot;) }"></td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_QUANTITY" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_QUANTITY" class="rgFilterBox" alt="Filter QUANTITY column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_QUANTITY&quot;,&quot;QUANTITY&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_QUANTITY&quot;,&quot;QUANTITY&quot;) }"></td><td style="white-space:nowrap;"><div id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RDIPFPICKUP_DATE_wrapper" class="RadPicker RadPicker_Office2010Blue" style="display:inline-block;width:100px;">
+            <input style="visibility:hidden;display:block;float:right;margin:0 0 -1px -1px;width:1px;height:1px;overflow:hidden;border:0;padding:0;" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RDIPFPICKUP_DATE" name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$RDIPFPICKUP_DATE" type="text" class="rdfd_ radPreventDecorate" value="" title="Visually hidden input created for functionality purposes."><table cellspacing="0" class="rcTable rcSingle" summary="Table holding date picker control for selection of dates." style="width:100%;">
+                <caption style="display:none;">
+                    RadDatePicker
+                </caption><thead style="display:none;">
+                    <tr>
+                        <th scope="col">RadDatePicker</th>
+                    </tr>
+                </thead><tbody>
+                    <tr>
+                        <td class="rcInputCell" style="width:100%;"><span id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RDIPFPICKUP_DATE_dateInput_wrapper" class="riSingle RadInput RadInput_Office2010Blue" style="display:block;width:100%;"><input id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RDIPFPICKUP_DATE_dateInput" name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$RDIPFPICKUP_DATE$dateInput" class="riTextBox riEnabled" alt="Filter PICKUP_DATE column" type="text"><input id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RDIPFPICKUP_DATE_dateInput_ClientState" name="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RDIPFPICKUP_DATE_dateInput_ClientState" type="hidden" autocomplete="off" value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;&quot;,&quot;valueAsString&quot;:&quot;&quot;,&quot;minDateStr&quot;:&quot;1900-01-01-00-00-00&quot;,&quot;maxDateStr&quot;:&quot;2099-12-31-00-00-00&quot;,&quot;lastSetTextBoxValue&quot;:&quot;&quot;}"></span></td><td><a title="Open the calendar popup." href="#" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RDIPFPICKUP_DATE_popupButton" class="rcCalPopup">Open the calendar popup.</a></td>
+                    </tr>
+                </tbody>
+            </table><input id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RDIPFPICKUP_DATE_ClientState" name="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_RDIPFPICKUP_DATE_ClientState" type="hidden" value="{&quot;minDateStr&quot;:&quot;1900-01-01-00-00-00&quot;,&quot;maxDateStr&quot;:&quot;2099-12-31-00-00-00&quot;}" autocomplete="off">
+        </div></td><td>&nbsp;</td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_SUBROUTE" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_SUBROUTE" class="rgFilterBox" alt="Filter SUBROUTE column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_SUBROUTE&quot;,&quot;SUBROUTE&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_SUBROUTE&quot;,&quot;SUBROUTE&quot;) }"></td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_FLIGHT_NO" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_FLIGHT_NO" class="rgFilterBox" alt="Filter FLIGHT_NO column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_FLIGHT_NO&quot;,&quot;FLIGHT_NO&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_FLIGHT_NO&quot;,&quot;FLIGHT_NO&quot;) }"></td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_DEST_FROM" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_DEST_FROM" class="rgFilterBox" alt="Filter DEST_FROM column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_DEST_FROM&quot;,&quot;DEST_FROM&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_DEST_FROM&quot;,&quot;DEST_FROM&quot;) }"></td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_DEST_TO" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_DEST_TO" class="rgFilterBox" alt="Filter DEST_TO column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_DEST_TO&quot;,&quot;DEST_TO&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_DEST_TO&quot;,&quot;DEST_TO&quot;) }" style="width:100px;"></td><td style="white-space:nowrap;"><input name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl02$FilterTextBox_REMARKS" type="text" size="10" id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_REMARKS" class="rgFilterBox" alt="Filter REMARKS column" onchange="$find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_REMARKS&quot;,&quot;REMARKS&quot;)" onkeypress="if(event.keyCode == 13){ this.blur(); event.cancelBubble = true; event.returnValue = false; if (event.stopPropagation){ event.stopPropagation(); event.preventDefault();} $find(&quot;ctl00_cphContent_RadGrid1_ctl00&quot;)._filterNoDelay(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl02_FilterTextBox_REMARKS&quot;,&quot;REMARKS&quot;) }"></td>
+    </tr>
+</thead><tfoot>
+    <tr class="rgFooter">
+        <td class="rgGroupCol">&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    </tr><tr class="rgPager">
+        <td colspan="15"><table summary="Data pager which controls on which page is the RadGrid control." style="width:100%;border-spacing:0;">
+            <caption>
+                <span style="display: none">Data pager</span>
+            </caption><thead>
+                <tr>
+                    <th scope="col">Data pager</th>
+                </tr>
+            </thead><tbody>
+                <tr>
+                    <td class="rgPagerCell NextPrevNumericAndAdvanced"><div class="rgWrap rgArrPart1">
+                        <input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl02" value=" " onclick="return false;__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl02','')" title="First Page" class="rgPageFirst"> <input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl03" value=" " onclick="return false;__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl03','')" title="Previous Page" class="rgPagePrev">
+                    </div><div class="rgWrap rgNumPart">
+                        <a onclick="return false;" class="rgCurrentPage" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl05','')"><span>1</span></a><a href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl07','')"><span>2</span></a>
+                    </div><div class="rgWrap rgArrPart2">
+                        <input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl10" value=" " onclick="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl10','')" title="Next Page" class="rgPageNext"> <input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl11" value=" " onclick="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ctl11','')" title="Last Page" class="rgPageLast">
+                    </div><div class="rgWrap rgInfoPart">
+                         &nbsp;Item <strong>1</strong> to <strong>15</strong> of <strong>24</strong>
+                    </div><div class="rgWrap rgAdvPart">
+                        <span id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_GoToPageLabel" class="rgPagerLabel">Page:</span><span id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_GoToPageTextBox_wrapper" class="riSingle RadInput RadInput_Office2010Blue" style="width:20px;"><input id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_GoToPageTextBox" name="ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$GoToPageTextBox" class="riTextBox riEnabled rgPagerTextBox" value="1" type="text"><input id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_GoToPageTextBox_ClientState" name="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_GoToPageTextBox_ClientState" type="hidden" autocomplete="off" value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;1&quot;,&quot;valueAsString&quot;:&quot;1&quot;,&quot;minValue&quot;:1,&quot;maxValue&quot;:2,&quot;lastSetTextBoxValue&quot;:&quot;1&quot;}"></span><span id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_PageOfLabel" class="rgPagerLabel">of 2</span>&nbsp;<input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$GoToPageLinkButton" value="Go" onclick="var gtpi = $get('ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_GoToPageTextBox'); if(gtpi.value == 1 || gtpi.value == '')return false;__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$GoToPageLinkButton','')" id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_GoToPageLinkButton" title="Go to Page" class="rgPagerButton"><span id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeLabel" class="rgPagerLabel">Page size:</span><span id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox_wrapper" class="riSingle RadInput RadInput_Office2010Blue" style="width:30px;"><input id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox" name="ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ChangePageSizeTextBox" class="riTextBox riEnabled rgPagerTextBox" value="15" type="text"><input id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox_ClientState" name="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox_ClientState" type="hidden" autocomplete="off" value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;15&quot;,&quot;valueAsString&quot;:&quot;15&quot;,&quot;minValue&quot;:1,&quot;maxValue&quot;:24,&quot;lastSetTextBoxValue&quot;:&quot;15&quot;}"></span><input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ChangePageSizeLinkButton" value="Change" onclick="var cpsi = document.getElementById(&quot;ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox&quot;); if ( cpsi.value > 24 || cpsi.value == 15){cpsi.value=Math.min(24,15);return false;};__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl03$ctl01$ChangePageSizeLinkButton','')" id="ctl00_cphContent_RadGrid1_ctl00_ctl03_ctl01_ChangePageSizeLinkButton" title="Change Page Size" class="rgPagerButton">
+                    </div></td>
+                </tr>
+            </tbody>
+        </table></td>
+    </tr>
+</tfoot><tbody>
+<tr class="rgGroupHeader">
+    <td class="rgGroupCol"><input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl04$ctl00" value=" " onclick="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl04$ctl00','')" title="Collapse group" class="rgCollapse" id="ctl00_cphContent_RadGrid1_ctl00__2__0"></td><td colspan="14"><p>SUBROUTE: JED-MAK</p></td>
+</tr><tr class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__0">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=30" target="_Blank">View</a></td><td>30</td><td>
+                    nabeelgoc
+                </td><td>www</td><td>1</td><td>BUS</td><td>1</td><td class="rgSorted">27 Mar 20</td><td>17:50</td><td>JED-MAK</td><td>BA-728</td><td>airport</td><td style="width:100px;">joptel</td><td>&nbsp;</td>
+</tr><tr class="rgAltRow" id="ctl00_cphContent_RadGrid1_ctl00__1">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=28" target="_Blank">View</a></td><td>28</td><td>
+                    HISKYTRV
+                </td><td>MUHAMMAD RAFIQUE</td><td>4</td><td>CAR</td><td>1</td><td class="rgSorted">02 Mar 20</td><td>00:05</td><td>JED-MAK</td><td>SV-705</td><td>JEDDAH AIRPORT</td><td style="width:100px;">MAKKAH HOTEL</td><td>&nbsp;</td>
+</tr><tr class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__2">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=29" target="_Blank">View</a></td><td>29</td><td>
+                    REHMANTRV
+                </td><td>MUHAMMAD DAUD GUL</td><td>7</td><td>H1</td><td>1</td><td class="rgSorted">27 Feb 20</td><td>19:20</td><td>JED-MAK</td><td>PA-741</td><td>JEDDAH AIRPORT</td><td style="width:100px;">MAKKAH HOTEL</td><td>&nbsp;</td>
+</tr><tr class="rgAltRow" id="ctl00_cphContent_RadGrid1_ctl00__3">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=25" target="_Blank">View</a></td><td>25</td><td>
+                    NABEELTRV
+                </td><td>WAFA QAMAR X 2</td><td>2</td><td>CAR</td><td>1</td><td class="rgSorted">25 Feb 20</td><td>14:20</td><td>JED-MAK</td><td>SV-567</td><td>JEDDAH HAJJ TERMINAL</td><td style="width:100px;">MAKKAH HILTON TOWER</td><td>MOB#00966582359720</td>
+</tr><tr class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__4">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=26" target="_Blank">View</a></td><td>26</td><td>
+                    NABEELTRV
+                </td><td>ASHRAF AMIN X 5</td><td>5</td><td>CAR</td><td>1</td><td class="rgSorted">24 Feb 20</td><td>01:45</td><td>JED-MAK</td><td>SV-737</td><td>JEDDAH HAJJ TERMINAL</td><td style="width:100px;">MAKKAH NAWARAT AL SHAMS 1</td><td>MOB#0583000471</td>
+</tr><tr class="rgAltRow" id="ctl00_cphContent_RadGrid1_ctl00__5">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=27" target="_Blank">View</a></td><td>27</td><td>
+                    NABEELTRV
+                </td><td>ABDUL HAMEED SHAKIR X 1</td><td>1</td><td>CAR</td><td>1</td><td class="rgSorted">20 Feb 20</td><td>17:25</td><td>JED-MAK</td><td>SV-801</td><td>JEDDAH HAJJ TERMINAL</td><td style="width:100px;">MAKKAH BURJ BILAD AL MASHAD</td><td>MOB#0582828951</td>
+</tr><tr class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__6">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=21" target="_Blank">View</a></td><td>21</td><td>
+                    HISKYTRV
+                </td><td>test</td><td>6</td><td>BUS</td><td>1</td><td class="rgSorted">18 Feb 20</td><td>19:55</td><td>JED-MAK</td><td>FZ-839</td><td>Airport</td><td style="width:100px;">hotel</td><td>&nbsp;</td>
+</tr><tr class="rgAltRow" id="ctl00_cphContent_RadGrid1_ctl00__7">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=22" target="_Blank">View</a></td><td>22</td><td>
+                    nabeelgoc
+                </td><td>test guest 2</td><td>6</td><td>BUS</td><td>1</td><td class="rgSorted">18 Feb 20</td><td>14:40</td><td>JED-MAK</td><td>FZ-839</td><td>Airport</td><td style="width:100px;">Hotel</td><td>&nbsp;</td>
+</tr><tr class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__8">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=24" target="_Blank">View</a></td><td>24</td><td>
+                    NABEELTRV
+                </td><td>RANA DAWOOD AHMED KHAN X 5</td><td>5</td><td>CAR</td><td>1</td><td class="rgSorted">30 Jan 20</td><td>15:10</td><td>JED-MAK</td><td>PK-717</td><td>JEDDAH AIRPORT</td><td style="width:100px;">MAKKAH HILTON TOWER</td><td>MOB#00966-582359720</td>
+</tr><tr class="rgGroupHeader">
+    <td class="rgGroupCol"><input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl23$ctl00" value=" " onclick="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl23$ctl00','')" title="Collapse group" class="rgCollapse" id="ctl00_cphContent_RadGrid1_ctl00__21__0"></td><td colspan="14"><p>SUBROUTE: MAK-JED</p></td>
+</tr><tr class="rgAltRow" id="ctl00_cphContent_RadGrid1_ctl00__9">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=29" target="_Blank">View</a></td><td>29</td><td>
+                    REHMANTRV
+                </td><td>MUHAMMAD DAUD GUL</td><td>7</td><td>H1</td><td>1</td><td class="rgSorted">27 Feb 20</td><td>12:00</td><td>MAK-JED</td><td>PA-741</td><td>MAKKAH HOTEL</td><td style="width:100px;">JEDDAH AIRPORT</td><td>&nbsp;</td>
+</tr><tr class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__10">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=27" target="_Blank">View</a></td><td>27</td><td>
+                    NABEELTRV
+                </td><td>ABDUL HAMEED SHAKIR X 1</td><td>1</td><td>CAR</td><td>1</td><td class="rgSorted">20 Feb 20</td><td>01:05</td><td>MAK-JED</td><td>SV-801</td><td>MAKKAH BURJ BILAD AL MASHAD</td><td style="width:100px;">JEDDAH HAJJ TERMINAL</td><td>MOB#0582828951</td>
+</tr><tr class="rgAltRow" id="ctl00_cphContent_RadGrid1_ctl00__11">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=22" target="_Blank">View</a></td><td>22</td><td>
+                    nabeelgoc
+                </td><td>test guest 2</td><td>6</td><td>BUS</td><td>1</td><td class="rgSorted">20 Feb 20</td><td>16:45</td><td>MAK-JED</td><td>FZ-839</td><td>HOtel</td><td style="width:100px;">Madina</td><td>&nbsp;</td>
+</tr><tr class="rgGroupHeader">
+    <td class="rgGroupCol"><input type="button" name="ctl00$cphContent$RadGrid1$ctl00$ctl30$ctl00" value=" " onclick="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl30$ctl00','')" title="Collapse group" class="rgCollapse" id="ctl00_cphContent_RadGrid1_ctl00__28__0"></td><td colspan="14"><p>SUBROUTE: MAK-MED (Showing 3 of 6 items. Group continues on the next page.)</p></td>
+</tr><tr class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__12">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=23" target="_Blank">View</a></td><td>23</td><td>
+                    REGENCYTRV
+                </td><td>test gurst 4</td><td>6</td><td>BUS</td><td>1</td><td class="rgSorted">01 Mar 20</td><td>15:45</td><td>MAK-MED</td><td>FZ-839</td><td>makk hotel</td><td style="width:100px;">Airpoty</td><td>&nbsp;</td>
+</tr><tr class="rgAltRow" id="ctl00_cphContent_RadGrid1_ctl00__13">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=26" target="_Blank">View</a></td><td>26</td><td>
+                    NABEELTRV
+                </td><td>ASHRAF AMIN X 5</td><td>5</td><td>CAR</td><td>1</td><td class="rgSorted">27 Feb 20</td><td>08:05</td><td>MAK-MED</td><td>SV-737</td><td>MAKKAH NAWARAT AL SHAMS 1</td><td style="width:100px;">MADINAH ROZA AL SAFA HOTEL</td><td>MOB#0583000471</td>
+</tr><tr class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__14">
+    <td class="rgGroupCol">&nbsp;</td><td><a href="View.aspx?i=29" target="_Blank">View</a></td><td>29</td><td>
+                    REHMANTRV
+                </td><td>MUHAMMAD DAUD GUL</td><td>7</td><td>H1</td><td>1</td><td class="rgSorted">27 Feb 20</td><td>09:00</td><td>MAK-MED</td><td>PA-741</td><td>MAKKAH HOTEL</td><td style="width:100px;">MADINAH HOTEL</td><td>&nbsp;</td>
+</tr>
+</tbody>
+
+</table><div id="ctl00_cphContent_RadGrid1_rfltMenu" style="display: none; visibility: visible; z-index: 7000;">
+<div class="RadMenu RadMenu_Office2010Blue RadMenu_Context RadMenu_Office2010Blue_Context    RadFilterMenu_CheckList" id="ctl00_cphContent_RadGrid1_rfltMenu_detached" style="display: none; visibility: visible; z-index: 7000;">
+    <ul class="rmActive rmVertical rmGroup rmLevel1" style="float: left;">
+        <li class="rmItem rmFirst"><a class="rmLink RadFilterMenu_Combined" href="#"><span class="rmText rmExpandRight">Filter Options</span></a><div class="rmSlide">
+            <ul class="rmVertical rmGroup rmLevel2">
+                <li class="rmItem rmFirst"><a class="rmLink" href="#"><span class="rmText">NoFilter</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">Contains</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">DoesNotContain</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">StartsWith</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">EndsWith</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">EqualTo</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">NotEqualTo</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">GreaterThan</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">LessThan</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">GreaterThanOrEqualTo</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">LessThanOrEqualTo</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">Between</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">NotBetween</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">IsEmpty</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">NotIsEmpty</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">IsNull</span></a></li><li class="rmItem "><a class="rmLink" href="#"><span class="rmText">NotIsNull</span></a></li><li class="rmItem rmLast"><a class="rmLink" href="#"><span class="rmText">Custom</span></a></li>
+            </ul>
+        </div></li><li class="rmItem rmLast rmTemplate"><div class="rmText">
+            <div id="ctl00_cphContent_RadGrid1_rfltMenu_i1_filterCheckList" class="RadListBox RadListBox_Default RadListBoxScrollable" style="height:300px;">
+                <div class="rlbGroup rlbGroupRight">
+                    <div class="rlbCheckAllItems" style="display: none;">
+                        <label><input type="checkbox" class="rlbCheckAllItemsCheckBox">Check All</label>
+                    </div>
+                </div><input id="ctl00_cphContent_RadGrid1_rfltMenu_i1_filterCheckList_ClientState" name="ctl00_cphContent_RadGrid1_rfltMenu_i1_filterCheckList_ClientState" type="hidden" autocomplete="off" value="{&quot;isEnabled&quot;:true,&quot;logEntries&quot;:[],&quot;selectedIndices&quot;:[],&quot;checkedIndices&quot;:[],&quot;scrollPosition&quot;:0}">
+            </div><input type="button" name="ctl00$cphContent$RadGrid1$rfltMenu$i1$ctl01" value="Apply" onclick="return false;__doPostBack('ctl00$cphContent$RadGrid1$rfltMenu$i1$ctl01','')" class="rgFilterApply"><input type="button" name="ctl00$cphContent$RadGrid1$rfltMenu$i1$ctl02" value="Cancel" onclick="return false;__doPostBack('ctl00$cphContent$RadGrid1$rfltMenu$i1$ctl02','')" class="rgFilterCancel">
+        </div></li>
+    </ul>
+</div><input id="ctl00_cphContent_RadGrid1_rfltMenu_ClientState" name="ctl00_cphContent_RadGrid1_rfltMenu_ClientState" type="hidden" autocomplete="off">
+</div><div id="ctl00_cphContent_RadGrid1_SharedCalendarContainer" style="display:none;">
+<div id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_wrapper" style="display:none;">
+    <table id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar" summary="Calendar control which enables the selection of dates." cellspacing="0" class="RadCalendar RadCalendar_Office2010Blue">
+        <caption>
+            <span style="display:none;">Calendar</span>
+        </caption><thead>
+            <tr>
+                <td class="rcTitlebar"><table cellspacing="0" summary="Title and navigation which can change and show the current year and month.">
+                    <caption>
+                        <span style="display:none;">Title and navigation</span>
+                    </caption><thead>
+                        <tr style="display:none;">
+                            <th scope="col">Title and navigation</th>
+                        </tr>
+                    </thead><tbody>
+<tr>
+<td><a id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_FNP" class="rcFastPrev" title="<<" href="#">&lt;&lt;</a></td><td><a id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_NP" class="rcPrev" title="<" href="#">&lt;</a></td><td id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Title" class="rcTitle">April 2022</td><td><a id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_NN" class="rcNext" title=">" href="#">&gt;</a></td><td><a id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_FNN" class="rcFastNext" title=">>" href="#">&lt;&lt;</a></td>
+</tr>
+</tbody>
+                </table></td>
+            </tr>
+        </thead><tbody>
+<tr>
+<td class="rcMain"><table id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top" class="rcMainTable" cellspacing="0" summary="Table containing all dates for the currently selected month.">
+<caption>
+<span style="display:none;">April 2022</span>
+</caption><thead>
+<tr class="rcWeek">
+    <th class="rcViewSel" scope="col">&nbsp;</th><th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_cs_1" title="Sunday" scope="col" abbr="Sun">S</th><th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_cs_2" title="Monday" scope="col" abbr="Mon">M</th><th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_cs_3" title="Tuesday" scope="col" abbr="Tue">T</th><th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_cs_4" title="Wednesday" scope="col" abbr="Wed">W</th><th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_cs_5" title="Thursday" scope="col" abbr="Thu">T</th><th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_cs_6" title="Friday" scope="col" abbr="Fri">F</th><th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_cs_7" title="Saturday" scope="col" abbr="Sat">S</th>
+</tr>
+</thead><tbody>
+<tr class="rcRow">
+    <th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_rs_1" scope="row">14</th><td class="rcOtherMonth" title="Sunday, March 27, 2022"><a href="#">27</a></td><td class="rcOtherMonth" title="Monday, March 28, 2022"><a href="#">28</a></td><td class="rcOtherMonth" title="Tuesday, March 29, 2022"><a href="#">29</a></td><td class="rcOtherMonth" title="Wednesday, March 30, 2022"><a href="#">30</a></td><td class="rcOtherMonth" title="Thursday, March 31, 2022"><a href="#">31</a></td><td title="Friday, April 01, 2022"><a href="#">1</a></td><td class="rcWeekend" title="Saturday, April 02, 2022"><a href="#">2</a></td>
+</tr><tr class="rcRow">
+    <th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_rs_2" scope="row">15</th><td class="rcWeekend" title="Sunday, April 03, 2022"><a href="#">3</a></td><td title="Monday, April 04, 2022"><a href="#">4</a></td><td title="Tuesday, April 05, 2022"><a href="#">5</a></td><td title="Wednesday, April 06, 2022"><a href="#">6</a></td><td title="Thursday, April 07, 2022"><a href="#">7</a></td><td title="Friday, April 08, 2022"><a href="#">8</a></td><td class="rcWeekend" title="Saturday, April 09, 2022"><a href="#">9</a></td>
+</tr><tr class="rcRow">
+    <th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_rs_3" scope="row">16</th><td class="rcWeekend" title="Sunday, April 10, 2022"><a href="#">10</a></td><td title="Monday, April 11, 2022"><a href="#">11</a></td><td title="Tuesday, April 12, 2022"><a href="#">12</a></td><td title="Wednesday, April 13, 2022"><a href="#">13</a></td><td title="Thursday, April 14, 2022"><a href="#">14</a></td><td title="Friday, April 15, 2022"><a href="#">15</a></td><td class="rcWeekend" title="Saturday, April 16, 2022"><a href="#">16</a></td>
+</tr><tr class="rcRow">
+    <th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_rs_4" scope="row">17</th><td class="rcWeekend" title="Sunday, April 17, 2022"><a href="#">17</a></td><td title="Monday, April 18, 2022"><a href="#">18</a></td><td title="Tuesday, April 19, 2022"><a href="#">19</a></td><td title="Wednesday, April 20, 2022"><a href="#">20</a></td><td title="Thursday, April 21, 2022"><a href="#">21</a></td><td title="Friday, April 22, 2022"><a href="#">22</a></td><td class="rcWeekend" title="Saturday, April 23, 2022"><a href="#">23</a></td>
+</tr><tr class="rcRow">
+    <th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_rs_5" scope="row">18</th><td class="rcWeekend" title="Sunday, April 24, 2022"><a href="#">24</a></td><td title="Monday, April 25, 2022"><a href="#">25</a></td><td title="Tuesday, April 26, 2022"><a href="#">26</a></td><td title="Wednesday, April 27, 2022"><a href="#">27</a></td><td title="Thursday, April 28, 2022"><a href="#">28</a></td><td title="Friday, April 29, 2022"><a href="#">29</a></td><td class="rcWeekend" title="Saturday, April 30, 2022"><a href="#">30</a></td>
+</tr><tr class="rcRow">
+    <th id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_Top_rs_6" scope="row">19</th><td class="rcOtherMonth" title="Sunday, May 01, 2022"><a href="#">1</a></td><td class="rcOtherMonth" title="Monday, May 02, 2022"><a href="#">2</a></td><td class="rcOtherMonth" title="Tuesday, May 03, 2022"><a href="#">3</a></td><td class="rcOtherMonth" title="Wednesday, May 04, 2022"><a href="#">4</a></td><td class="rcOtherMonth" title="Thursday, May 05, 2022"><a href="#">5</a></td><td class="rcOtherMonth" title="Friday, May 06, 2022"><a href="#">6</a></td><td class="rcOtherMonth" title="Saturday, May 07, 2022"><a href="#">7</a></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+    </table><input type="hidden" name="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_SD" id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_SD" value="[]"><input type="hidden" name="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_AD" id="ctl00_cphContent_RadGrid1_gdtcSharedCalendar_AD" value="[[1900,1,1],[2099,12,31],[2022,4,15]]">
+</div>
+</div><input id="ctl00_cphContent_RadGrid1_ClientState" name="ctl00_cphContent_RadGrid1_ClientState" type="hidden" autocomplete="off">	</div>
+
+</div>
+         </div>
+     </div>
+</div>
+
+ <br> 
+
+
+
+    <!-- Sidebar -->
+    <div id="MasterSideBar" class="span-6 last">
+        
+
+        <!-- Discipline menu -->
+    </div>
+
+</div>
+</body>
+</html>

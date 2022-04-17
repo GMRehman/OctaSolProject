@@ -1,0 +1,655 @@
+/* Product Details Page */
+#bfw_product_details_header {
+	background: url(http://worth.pristineminds.net/resources/images/box_grad_bg.gif) bottom left repeat-x;
+	min-width: 950px;
+	margin: -10px 0 10px 0;
+	padding: 0;
+}
+	#bfw_page_tabs {
+		margin: 0;
+	}
+		#bfw_page_tabs ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+			#bfw_page_tabs ul li {
+				float: left;
+				position: relative;
+				display: inline;
+				padding: 0;
+				margin: 0 3px 0 0;
+				height: 25px;
+				line-height: 1.1em;
+				vertical-align: bottom;
+				overflow-y: hidden;
+			}
+				#bfw_page_tabs ul li .bfw_clear { /* Round Corner Workaround for IE6 */
+					display: inline;
+				}
+				#bfw_page_tabs .bfw_small_tab,
+				#bfw_page_tabs .bfw_medium_tab,
+				#bfw_page_tabs .bfw_large_tab {
+					height: 25px;
+					padding: 0 12px;
+					margin: 0;
+				}
+				#bfw_page_tabs .bfw_small_tab {
+					width: 55px;
+				}
+				#bfw_page_tabs .bfw_medium_tab {
+					width: 90px;
+				}
+				#bfw_page_tabs .bfw_large_tab {
+					width: 130px;
+				}
+				#bfw_page_tabs .bfw_tab_item {
+					text-align: center;
+				}
+				#bfw_page_tabs ul li a {
+					display: block;
+					font-family: Arial, Verdana, sans-serif;
+					font-size: 0.9em;
+					font-weight: bold;
+					color: #FFFFFF;
+					line-height: 25px;
+					height: 25px;
+					text-decoration: none;
+					vertical-align: bottom;
+					margin: 0;
+					padding: 0;
+				}
+				#bfw_page_tabs .bfw_tab_about {
+					/*background: #559933 url(http://worth.pristineminds.nethttp://worth.pristineminds.net/resources/images/tab_bg_green.gif) bottom left repeat-x;*/
+					background: url(http://worth.pristineminds.net/resources/images/tab_green_small.gif) bottom center no-repeat;
+				}
+					#bfw_page_tabs .bfw_current .bfw_tab_about {
+						background: url(http://worth.pristineminds.net/resources/images/tab_small_current.gif) bottom center no-repeat;
+					}
+				#bfw_page_tabs .bfw_tab_table_of_contents {
+					/*background: #166e6e url(http://worth.pristineminds.net/resources/images/tab_bg_hunter_green.gif) bottom left repeat-x;*/
+					background: url(http://worth.pristineminds.net/resources/images/tab_hunter_green_large.gif) bottom center no-repeat;
+				}
+					#bfw_page_tabs .bfw_current .bfw_tab_table_of_contents {
+						background: url(http://worth.pristineminds.net/resources/images/tab_large_current.gif) bottom center no-repeat;
+					}
+				#bfw_page_tabs .bfw_tab_instructor_resources {
+					/*background: #336699 url(http://worth.pristineminds.net/resources/images/tab_bg_blue.gif) bottom left repeat-x;*/
+					background: url(http://worth.pristineminds.net/resources/images/tab_blue_large.gif) bottom center no-repeat;
+				}
+					#bfw_page_tabs .bfw_current .bfw_tab_instructor_resources {
+						background: url(http://worth.pristineminds.net/resources/images/tab_large_current.gif) bottom center no-repeat;
+					}
+				#bfw_page_tabs .bfw_tab_student_resources {
+					/*background: #c99500 url(http://worth.pristineminds.net/resources/images/tab_bg_yellow.gif) bottom left repeat-x;*/
+					background: url(http://worth.pristineminds.net/resources/images/tab_yellow_large.gif) bottom center no-repeat;
+				}
+					#bfw_page_tabs .bfw_current .bfw_tab_student_resources {
+						background: url(http://worth.pristineminds.net/resources/images/tab_large_current.gif) bottom center no-repeat;
+					}
+				#bfw_page_tabs .bfw_tab_how_to_get_it {
+					/*background: #882807 url(http://worth.pristineminds.net/resources/images/tab_bg_red.gif) bottom left repeat-x;*/
+					background: url(http://worth.pristineminds.net/resources/images/tab_red_medium.gif) bottom center no-repeat;
+				}
+					#bfw_page_tabs .bfw_current .bfw_tab_how_to_get_it {
+						background: url(http://worth.pristineminds.net/resources/images/tab_medium_current.gif) bottom center no-repeat;
+					}
+				#bfw_page_tabs .bfw_current .bfw_small_tab,
+				#bfw_page_tabs .bfw_current .bfw_medium_tab,
+				#bfw_page_tabs .bfw_current .bfw_large_tab {
+					/*border: 1px solid #DDDDDD;*/
+					padding: 0 13px;
+				}
+					#bfw_page_tabs .bfw_current a {
+						color: #555555;
+					}
+
+#bfw_main_content {
+	background: #ffffff url(http://worth.pristineminds.net/resources/images/main_content_bg.gif) top center repeat-y;
+	min-height: 400px;
+	padding-bottom: 8px;
+}
+	#bfw_main_content .bfw_padding {
+		padding: 0 12px;
+	}
+	#bfw_main_content h4.bfw_section_title {
+		font-size: 1.3em;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	#bfw_main_content .bfw_item_list {
+
+	}
+	#bfw_main_content_footer {
+		height: 12px;
+		margin: 0;
+		padding: 0;
+		background: url(http://worth.pristineminds.net/resources/images/main_content_footer_bg.gif) bottom center no-repeat;
+	}
+#bfw_book_details {
+/*	border-right: 1px solid #DDDDDD;
+	margin-right: 7px;*/
+	margin: 0 4px 0 0;
+	padding-left: 4px;
+}
+	#bfw_book_details h5,
+	#bfw_book_details p,
+	#bfw_book_details ul {
+		margin-bottom: 10px;
+	}
+	#bfw_book_details .bfw_book_cover {
+		padding: 0;
+		text-align: center;
+		margin: 0 0 15px 0;
+	}
+	#bfw_book_details .bfw_book_title {
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+		#bfw_book_details .bfw_book_title .bfw_new {
+			color: #7e2a33;
+		}
+	#bfw_book_details .bfw_book_description {
+		font-size: 11px;
+		line-height: 16px;
+	}
+	#bfw_book_details .bfw_author_title {
+		color: #7e2a33;
+	}
+	#bfw_book_details .bfw_author_list {
+		list-style: none;
+		margin-left: 0;
+	}
+		#bfw_book_details .bfw_author_list li {
+			line-height: 14px;
+			margin-bottom: 10px;
+		}
+		#bfw_book_details .bfw_author_list a {
+			font-weight: bold;
+			text-decoration: none;
+		}
+	#bfw_how_to_get_it_box {
+		background: #dddac2;
+		padding: 8px;
+		margin-bottom: 15px;
+		color: #222222;
+	}
+		#bfw_how_to_get_it_box a {
+			color: #222222;
+			text-decoration: underline;
+		}
+		#bfw_how_to_get_it_box .bfw_price_options {
+			background: #f8f8f3;
+			padding: 8px;
+			margin-bottom: 8px;
+		}
+		#bfw_how_to_get_it_box .bfw_message_box {
+			padding: 4px;
+		}
+			#bfw_how_to_get_it_box span {
+				line-height: 13px;
+			}
+			#bfw_how_to_get_it_box .bfw_price_options span.bfw_price {
+				display: block;
+				font-size: 18px;
+				line-height: 20px;
+				margin-bottom: 0;
+				font-weight: bold;
+			}
+	#bfw_average_ranking {
+		margin-bottom: 15px;
+	}
+		#bfw_average_ranking h5.bfw_title {
+			font-size: 14px;
+			line-height: 14px;
+			height: 14px;
+			padding: 10px 12px;
+			color: #000000;
+			background: url(http://worth.pristineminds.net/resources/images/box_grad_bg.gif) bottom left repeat-x;
+			margin: 0;
+		}
+		#bfw_average_ranking .bfw_star_rankings {
+			display: block;
+			padding: 12px 0 0 45px;
+		}
+		#bfw_average_ranking .bfw_box_footer {
+			padding: 5px 12px;
+			text-align: right;
+			border-top: 1px solid #dddddd;
+		}
+			#bfw_average_ranking .bfw_box_footer a {
+				font-family: Arial, sans-serif;
+				font-size: 11px;
+				line-height: 12px;
+				height: 12px;
+				text-decoration: none;
+				color: #999999;
+			}
+	
+#bfw_book_synopsis {
+
+}
+#bfw_book_features {
+
+}
+	#bfw_book_features p {
+	
+	}
+		#bfw_book_features p span.bfw_head {
+			font-size: 14px;
+			color: #006699;
+		}
+#bfw_book_new_to_this_edition {
+	
+}
+	#bfw_book_new_to_this_edition h4 {
+		font-size: 15px;
+		margin-bottom: 12px;
+		color: #006699;
+	}
+	#bfw_book_new_to_this_edition p {
+		margin-bottom: 12px;
+	}
+#bfw_book_author_bio {
+	
+}
+	#bfw_book_author_bio .bfw_author_image {
+		padding: 4px;
+		border: 1px solid #dddddd;
+	}
+	#bfw_book_author_bio .bfw_video_link {
+		background: url(http://worth.pristineminds.net/product-details/resources/images/icon_video.gif) center left no-repeat;
+		padding-left: 23px;
+		text-decoration: none;
+	}
+#bfw_select_an_edition {
+	width: 100%;
+}
+#bfw_instructor_resources {
+
+}
+	#bfw_instructor_resources .bfw_content_toggler {
+		padding-bottom: 15px;
+		border-bottom: 1px solid #cccccc;
+	}
+		#bfw_instructor_resources .bfw_content_toggler a {
+			margin-left: 10px;
+			padding-left: 30px;
+			text-decoration: none;
+			display: block;
+			color: #000000;
+		}
+		#bfw_instructor_resources .bfw_content_toggler a.bfw_toggle_plus {
+			background: url(http://worth.pristineminds.net/resources/images/icon_toggle_plus.gif) top left no-repeat;
+		}
+		#bfw_instructor_resources .bfw_content_toggler a.bfw_toggle_minus {
+			background: url(http://worth.pristineminds.net/resources/images/icon_toggle_minus.gif) top left no-repeat;
+		}
+	#bfw_instructor_resources .bfw_hidden_content {
+		display: none;
+		padding-left: 40px;
+	}
+.bfw_toggle_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+	.bfw_toggle_list li {
+
+	}
+		.bfw_toggle_list_child {
+			margin: 0 0 10px 35px;
+			padding-left: 50px;
+			padding-bottom: 10px;
+			list-style-type: square;
+			border-bottom: 1px solid #CCCCCC;
+		}
+			.bfw_toggle_list_child li {
+				margin-bottom: 5px; 
+			}
+	.bfw_toggle_list h5 {
+		padding-bottom: 10px;
+		margin: 0 0 10px 35px;
+		border-bottom: 1px solid #CCCCCC;
+	}
+		.bfw_toggle_list h5 a {
+			padding-left: 30px;
+			text-decoration: none;
+			display: block;	
+		}
+			.bfw_toggle_list h5 a .bfw_pdf {
+				padding-left: 18px;
+				background: url(http://worth.pristineminds.net/resources/images/icon_pdf_small.gif) center left no-repeat;
+			}
+		.bfw_toggle_list .bfw_toggle_plus {
+			background: url(http://worth.pristineminds.net/resources/images/icon_toggle_plus.gif) top left no-repeat;
+		}
+		.bfw_toggle_list .bfw_toggle_minus {
+			background: url(http://worth.pristineminds.net/resources/images/icon_toggle_minus.gif) top left no-repeat;
+		}
+	.bfw_toggle_list .bfw_new {
+		background: url(http://worth.pristineminds.net/resources/images/icon_new_badge.gif) top left no-repeat;
+	}
+.bfw_get_acrobat_reader {
+	display: block;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+	.bfw_get_acrobat_reader p {
+		margin: 0;
+		padding: 0;
+		color: #414141;
+	}
+		.bfw_get_acrobat_reader p img {
+			float: left;
+			margin-right: 10px;
+			vertical-align: top;
+		}
+		.bfw_get_acrobat_reader p a {
+			color: #298ac2;
+			font-weight: bold;
+		}
+.bfw_pdf_chapter_list {
+	margin: 0;
+	padding: 20px 0 0 0;
+	list-style-type: none;
+}
+	.bfw_pdf_chapter_list li {
+		display: block;
+		margin: 0 0 30px 0;
+		padding: 0 0 10px 5px;
+		background: url(http://worth.pristineminds.net/resources/images/grad_bg_large.gif) bottom left repeat-x;
+	}
+		.bfw_pdf_chapter_list li .bfw_pdf_icon {
+			padding: 0 100px 15px 48px;
+			background: url(http://worth.pristineminds.net/product-details/resources/images/icon_pdf.gif) top left no-repeat;
+		}
+		.bfw_pdf_chapter_list h4 {
+			color: #114070;
+			margin-bottom: 8px;
+			font-weight: bold;
+		}
+		.bfw_pdf_chapter_list p {
+			line-height: 1.2em;
+			margin-bottom: 8px;
+			color: #777777;
+		}
+		.bfw_pdf_chapter_list a.bfw_download_link {
+			color: #003366;
+			font-weight: bold;
+			text-decoration: none;
+		}
+.bfw_resource_description {
+
+}
+	.bfw_resource_description .bfw_more_description {
+		padding: 10px;
+		background: #EEEEEE;
+		border-top: 1px solid #DDDDDD;
+		border-bottom: 1px solid #DDDDDD;
+		margin-bottom: 15px;
+	}
+.bfw_package_area {
+	display: block;
+	background: #f7f6f2;
+	border: 1px solid #CCCCCC;
+	padding: 0 0 5px 0;
+	margin: 0 10px 15px 10px;
+}
+	.bfw_package_area_top {
+		display: block;
+		padding: 8px 12px 8px 12px;
+		margin: 0 0 12px 0;
+		border-bottom: 1px solid #CCCCCC;
+	}
+		.bfw_package_area_top a {
+			margin: 0;
+			padding: 0;
+		}
+	.bfw_package_area_main {
+		padding-top: 15px;
+		padding-bottom: 5px;
+	}
+	.bfw_package_area_left_col {
+		float: left;
+		width: 162px;
+		padding-left: 12px;
+	}
+	.bfw_package_area_right_col {
+		float: left;
+		width: 500px;
+		padding-right: 12px;
+	}
+	.bfw_package_area_body {
+		display: block;
+		padding: 10px 12px 5px 12px;
+	}
+	.bfw_package_area h4 {
+		color: #1a4776;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+	.bfw_package_area h4 span.bfw_details {
+		font-size: 12px;
+		font-weight: normal;
+		color: #999999;
+		margin-left: 10px;
+	}
+	.bfw_package_area p {
+		margin-bottom: 10px;
+	}
+	.bfw_package_area .bfw_border_box {
+		display: block;
+		margin: 0 0 10px 0;
+		padding: 10px;
+		border-top: 1px solid #CCCCCC;
+		border-bottom: 1px solid #CCCCCC;
+		vertical-align: middle;
+	}
+	.bfw_package_area input,
+	.bfw_package_area label {
+		line-height: 1em;
+		vertical-align: middle;
+	}
+	.bfw_package_area label {
+		color: #298ac2;
+	}
+	.bfw_package_area form span { /* default, 4 items in a row */
+		float: left;
+		width: 155px;
+		padding: 0 0 10px 10px;
+		margin: 0;
+		position: relative;
+		display: block;
+	}
+	.bfw_package_area form#bfw_package_filter_3 span,
+	.bfw_package_area form.bfw_col-3 span { /* 3 items in a row */
+		float: left;
+		width: 215px;
+		padding: 0 0 10px 10px;
+		margin: 0;
+		position: relative;
+		display: block;
+	}
+		.bfw_package_area form.bfw_col-3 span input {
+			display: block;
+			width: 15px;
+			margin-right: 10px;
+			float: left;
+		}
+		.bfw_package_area form.bfw_col-3 span label {
+			display: block;
+			width: 180px;
+			float: left;
+			padding-top: 4px;
+			cursor: help;
+		}
+.bfw_package_selector {
+
+}
+	.bfw_package_selector .bfw_package_version {
+		float: left;
+		width: 145px;
+		margin: 0 10px 10px 0;
+		background: #ffffff;
+		border: 1px solid #dddddd;
+	}
+		.bfw_package_selector .bfw_package_version a {
+			display: block;
+			font-size: 14px;
+			line-height: 14px;
+			height: 14px;
+			padding: 12px 8px 12px 35px;
+			margin: 0 0 0 15px;
+			text-decoration: none;
+			color: #999999;
+			background-position: left center;
+			background-repeat: no-repeat;
+		}
+		.bfw_package_selector #bfw_paperback a {
+			background-image: url(http://worth.pristineminds.net/resources/images/icon_paperback.gif);
+		}
+		.bfw_package_selector #bfw_hardcover a {
+			background-image: url(http://worth.pristineminds.net/resources/images/icon_hardcover.gif);
+		}
+		.bfw_package_selector #bfw_looseleaf a {
+			background-image: url(http://worth.pristineminds.net/resources/images/icon_looseleaf.gif);
+		}
+		.bfw_package_selector #bfw_portal a {
+			background-image: url(http://worth.pristineminds.net/resources/images/icon_portal.gif);
+		}
+		.bfw_package_selector #bfw_spiral a {
+			background-image: url(http://worth.pristineminds.net/resources/images/icon_spiral.gif);
+		}
+		.bfw_package_selector #bfw_ebook a {
+			background-image: url(http://worth.pristineminds.net/resources/images/icon_ebook.gif);
+		}
+		.bfw_package_selector .bfw_current {
+			border-color: #298ac2;
+		}
+			.bfw_package_selector .bfw_current a {
+				color: #298ac2;
+			}
+
+.bfw_checkbox_container {		
+}
+	.bfw_checkbox_container span {
+		float: left;
+		width: 320px;
+		padding: 0 0 10px 10px;
+		margin: 0;
+}
+
+/* Package Options */
+ul.bfw_package_options {
+	margin: 0;
+	padding: 0 0 15px 0;
+	list-style: none;
+}
+	ul.bfw_package_options li {
+		float: left;
+		width: 35px;
+		height: 42px;
+		padding: 0 0 0 20px;
+		margin: 0 5px 0 0;
+		background: url(http://worth.pristineminds.net/product-details/resources/images/icon_plus.gif) top left no-repeat;
+	}
+	ul.bfw_package_options li.bfw_option_book {
+		padding: 0;
+		background: none;
+	}
+
+/* How To Get It */
+.bfw_available_formats {
+	padding: 10px 0;
+}
+	.bfw_available_formats h5,
+	.bfw_available_formats h6 {
+		font-size: 14px;
+	}
+	.bfw_available_formats h5,
+	.bfw_available_formats p {
+		margin-bottom: 10px;
+	}
+	.bfw_available_formats .bfw_price {
+		font-size: 18px;
+		font-weight: bold;
+		color: #922c44;
+	}
+
+/* Overlay */
+#bfw_pop_package_detail {
+	width: 700px;
+}
+	#bfw_pop_package_detail .bfw_left_col {
+		float: left;
+		width: 200px;
+		text-align: center;
+	}
+		#bfw_pop_package_detail .bfw_left_col img {
+			margin: 0 auto 10px;
+		}
+		#bfw_pop_package_detail .bfw_left_col .bfw_share_this {
+			width: 120px;
+			padding: 15px 15px 0 15px;
+			margin: 0 auto;
+			background: #dddac2;
+		}
+	#bfw_pop_package_detail .bfw_right_col {
+		float: left;
+		width: 500px;
+	}
+#bfw_pop_resource_filter {
+	width: 630px;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+	#bfw_pop_resource_filter .bfw_popup_contents {
+		padding: 0 20px 10px 20px;
+	}
+	#bfw_pop_resource_filter table td {
+		border-bottom: 1px solid #DDDDDD;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+/* Tooltip */
+#tooltip{
+    width: auto;
+    max-width: 300px;
+    min-width: 100px;
+    border: 2px solid #ffffff;
+    background: #1a74b2;
+    padding: 8px;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #ffffff;
+}
+	#tooltip #ttimg.top{
+	    margin-top: -17px;
+	    margin-left: 2px
+	}
+	#tooltip #ttimg.bottom{
+	    bottom: 0;
+	    margin-bottom: -12px;
+	    margin-left: 2px
+	}
+	#tooltip.default{
+	    border: 2px solid #ffffff;
+	    background: #1a74b2;
+	    color: #ffffff;
+	    margin-top: 2px;
+	}
+	#tooltip.default #ttimg.top{
+		position: absolute;
+		margin-top: -8px;
+	    margin-left: -8px
+	}
+	#tooltip.default #ttimg.bottom{
+		position: absolute;
+	    bottom: 0;
+	    margin-bottom: -3px;
+	    margin-left: -8px
+	}

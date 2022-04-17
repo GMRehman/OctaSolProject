@@ -1,0 +1,56 @@
+﻿body {
+}
+
+.Repeater
+{
+    width:800px;    
+}
+
+.RepeaterTABLE
+{
+    background-color:White;
+    border:solid 1px #999999;
+}
+.RepeaterTD
+{
+    height: 20px; vertical-align:top;
+    background-color:#EEEEEE;
+    color:Blue; 
+    white-space:nowrap;
+    text-align: center;  
+    font-size:9pt;  
+}
+.RepeaterHeader
+{
+    vertical-align:middle;     
+    font-weight:bold;
+    background-color:#000084;
+    color:White;
+    font-variant:small-caps;
+    font-size:11pt;
+}
+
+.RepeaterList
+{
+    width:250px;
+    border-bottom: solid 1px #999999;
+}
+.RepeaterCountRow
+{
+    background-color:#DCDCDC;
+    border-top: solid 1px #000084;
+    font-weight:bold;
+    font-size:9pt;
+}
+.vertical
+{
+    /*writing-mode: tb-rl;*/
+  
+  /*  writing-mode:tb-rl;
+    filter: flipH flipV ;*/
+}
+
+.test
+{
+    
+}

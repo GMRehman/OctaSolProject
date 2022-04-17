@@ -1,0 +1,107 @@
+/* List Page */
+#bfw_marketing_top {
+	text-align: center;
+	margin: 0 0 15px;
+}
+#bfw_main_content {
+	background: #ffffff url(../../common/images/main_content_bg.gif) top center repeat-y;
+	min-height: 400px;
+	padding-bottom: 8px;
+}
+	#bfw_main_content .bfw_padding {
+		padding: 0 12px;
+	}
+	#bfw_main_content h4.bfw_section_title {
+		font-size: 1.3em;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	#bfw_main_content .bfw_item_list {
+
+	}
+	#bfw_main_content_footer {
+		height: 12px;
+		margin: 0;
+		padding: 0;
+		background: url(../../common/images/main_content_footer_bg.gif) bottom center no-repeat;
+	}
+
+/* Our Authors page */
+#bfw_ad_meet_the_authors {
+	display: block;
+	height: 170px;
+	padding: 0;
+	background: url(../../common/images/ad_meet_the_authors.jpg) center center no-repeat;
+}
+.bfw_author_info {
+	margin-bottom: 15px;
+}
+	.bfw_author_info .bfw_author_name {
+		font-family: Georgia, Times, serif;
+		color: #114070;
+	}
+	.bfw_author_info .bfw_author_image {
+		padding: 4px;
+		border: 1px solid #dddddd;
+	}
+	.bfw_author_info .bfw_video_link {
+		background: url(../../common/images/icon_video.gif) center left no-repeat;
+		padding-left: 23px;
+	}
+	.bfw_author_info .bfw_home_link {
+		background: url(../../common/images/icon_home.gif) center left no-repeat;
+		padding-left: 23px;
+	}
+
+
+/* Author's page */
+#bfw_authors_banner {
+	display: block;
+	height: 250px;
+	padding: 0;
+	text-align: left;
+	background: url(../images/list-page/ad_author_page.gif) top left;
+}
+	#bfw_authors_banner .bfw_author_photo {
+		margin: 15px 0 0 12px;
+		padding: 4px;
+		border: 1px solid #dddddd;
+	}
+	#bfw_authors_banner h1.bfw_author_name {
+		font-family: Georgia, Times, serif;
+		font-size: 48px;
+		color: #12375c;
+		margin: 10px 0 10px 8px;
+	}
+	#bfw_authors_banner p {
+		margin: 0 0 10px 10px;
+	}
+	#bfw_authors_banner .bfw_author_link {
+		float: right;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+#bfw_pop_full_bio {
+	margin: 20px;
+}
+	#bfw_pop_full_bio h2 {
+		font-family: Georgia, Times, serif;
+		font-size: 48px;
+		margin-bottom: 10px;
+		color: #12375c;
+	}
+	#bfw_pop_full_bio p {
+		color: #555555;
+		font-size: 1em;
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	

@@ -1,0 +1,85 @@
+<div id="cphContent_Panel1" class="Panel_1" style="color:Blue;background-color:Transparent;border-color:Blue;font-family:Times New Roman;font-size:12pt;font-weight:bold;min-width: 950px;">
+	<fieldset>
+		<legend>
+			&nbsp; Manage Staff &nbsp;&nbsp;
+		</legend>
+            <div id="ctl00_cphContent_RadGrid1" class="RadGrid RadGrid_Office2010Blue" tabindex="0">
+
+		<!-- 2014.1.225.45 --><table class="rgMasterTable" rules="all" border="1" id="ctl00_cphContent_RadGrid1_ctl00" style="width:100%;table-layout:auto;empty-cells:show;">
+			<colgroup>
+		<col>
+		<col>
+		<col>
+		<col>
+		<col>
+		<col>
+		<col>
+	</colgroup>
+<thead>
+				<tr class="rgCommandRow">
+					<td class="rgCommandCell" colspan="7"><table class="rgCommandTable" summary="Command item for additional functionalities for the grid like adding a new record and exporting." style="width:100%;">
+						<caption>
+							<span style="display: none">Command item</span>
+						</caption><thead>
+							<tr>
+								<th scope="col">Command item</th>
+							</tr>
+						</thead><tbody>
+							<tr>
+								<td align="left"><input type="submit" name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl00$AddNewRecordButton" value=" " id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl00_AddNewRecordButton" title="Add new record" class="rgAdd"><a id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl00_InitInsertButton" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl00$InitInsertButton','')">Add new record</a></td><td align="right"><input type="submit" name="ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl00$RefreshButton" value=" " id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl00_RefreshButton" title="Refresh" class="rgRefresh"><a id="ctl00_cphContent_RadGrid1_ctl00_ctl02_ctl00_RebindGridButton" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl02$ctl00$RebindGridButton','')">Refresh</a></td>
+							</tr>
+						</tbody>
+					</table></td>
+				</tr><tr>
+					<th scope="col" class="rgHeader">ID</th><th scope="col" class="rgHeader">NAME</th><th scope="col" class="rgHeader">PhoneNo</th><th scope="col" class="rgHeader">City</th><th scope="col" class="rgHeader">SHIRKA</th><th scope="col" class="rgHeader">&nbsp;</th><th scope="col" class="rgHeader">&nbsp;</th>
+				</tr>
+			</thead><tbody>
+			<tr *ngFor="let staff of staffservice.list_staff" class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__0">
+				<td>{{staff.id}}</td><td>
+                                 {{staff.name}}
+                            </td><td>
+								{{staff.phoneNumber}}
+                            </td><td>
+								{{staff.city}}
+                            </td><td>
+								{{staff.shirka}}
+                            </td><td><a href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl04$ctl00','')">Edit</a></td><td><a onclick="if(!confirm('Are you sure you want to delete this row or record?'))return false;" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl04$ctl01','')">Delete</a></td>
+			</tr><tr class="rgAltRow" id="ctl00_cphContent_RadGrid1_ctl00__1">
+				<td>87</td><td>
+                                 MAKKAH BRANCH
+                            </td><td>
+                                 0599959380
+                            </td><td>
+                                MAKKAH
+                            </td><td>
+                                
+                            </td><td><a href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl06$ctl00','')">Edit</a></td><td><a onclick="if(!confirm('Are you sure you want to delete this row or record?'))return false;" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl06$ctl01','')">Delete</a></td>
+			</tr><tr class="rgRow" id="ctl00_cphContent_RadGrid1_ctl00__2">
+				<td>88</td><td>
+                                 MADINAH BRANCH
+                            </td><td>
+                                 0599959381
+                            </td><td>
+                                MADINA
+                            </td><td>
+                                
+                            </td><td><a href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl08$ctl00','')">Edit</a></td><td><a onclick="if(!confirm('Are you sure you want to delete this row or record?'))return false;" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl08$ctl01','')">Delete</a></td>
+			</tr><tr class="rgAltRow" id="ctl00_cphContent_RadGrid1_ctl00__3">
+				<td>89</td><td>
+                                 HEAD OFFICE
+                            </td><td>
+                                 0583000471
+                            </td><td>
+                                JEDDAH
+                            </td><td>
+                                
+                            </td><td><a href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl10$ctl00','')">Edit</a></td><td><a onclick="if(!confirm('Are you sure you want to delete this row or record?'))return false;" href="javascript:__doPostBack('ctl00$cphContent$RadGrid1$ctl00$ctl10$ctl01','')">Delete</a></td>
+			</tr>
+			</tbody>
+
+		</table><input id="ctl00_cphContent_RadGrid1_ClientState" name="ctl00_cphContent_RadGrid1_ClientState" type="hidden" autocomplete="off">	</div>
+		
+
+        
+	</fieldset>
+</div>

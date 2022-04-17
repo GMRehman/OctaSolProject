@@ -1,0 +1,303 @@
+<html>
+<head>
+  
+  <title>
+
+</title>
+</head>
+
+
+<body>
+    <form method="post" action="./Default.aspx" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="btnSearch" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="3VfaZkEiekkTi+0+jRfDIDWHnsB+KbH7iP8Za1j5cdpRc98DlkxcX3iLWh5byFpSm7l+W/q15iCwduyQycDUeJbe8ZQVSHGge0AOxz0n6w+4STt92EeVOhDpB1aoiG9r9bR3+o+XaAOuzHktvCYK33/aTtE5/43Zr4+1POOsTO9Xe5IUVTEBZ0sasN4AIfjuVEFdK4DUSdAwVb2HIYInZS493TYz+6ToVQFmHuzvOoLNOhOZdqpSnjW9kGSfftqICr3zYn8rxDHNq0XlV3xC6SyquIMvRYIY/JR0ZxqoEWs=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Rl0Vc16DevEruUWW6K6GUDeI4mhuQvkkunAfJpS5O3AQlrRbPJtXm/9dW7WdWEHB0Ed/ApHb7UXS81LFJeJA8BthzZ9w3DXfNOoB6oNN2ca55lAPp8WDhtKkF2+mPorj1bXs3BSCUZs0WUrrdzrx0ppA3lxnzSyTnk1brpsurBM=" />
+</div>
+        <!-- header elements are absolute-positioned and placed in the bottom for SEO purposes -->
+        <div id="bfw_header">
+            <div id="bfw_page_header" class="container">
+                <div class="span-11">
+                    <div id="bfw_header_logo">
+                        <a href="/" title="">
+                            <img class="bfw_pngfix" src="../assets/css/company/BasmaEmarGroup/logo.png?t=504910944000000000" alt="Logo" style="max-height: 90px;" /></a>
+                    </div>
+                </div>
+                <div id="toolbar" class="span-13 last">
+                    <div id="bfw_instructor_toolbar" class="bfw_round_bottom">
+                        <ul class="clearfix">
+                            <li>
+                                <a id="hypProfile" href="Manage/Profile.aspx">Profile</a>| </li>
+                            <li>
+                                <a id="hypVouchers" href="Reports/ListVoucher2.aspx" style="font-weight:bold;">Vouchers(<span id="noV">0</span>)</a>|</li>
+                            <li>
+                                <a id="hypAccount" href="Account/Report_PartyWise2.aspx"> Party Account  | </a>
+                            </li>
+                            <li id="bfw_log_in">
+                                <a id="bfw_btn_log_out" href="javascript:__doPostBack(&#39;ctl00$bfw_btn_log_out&#39;,&#39;&#39;)">Log Out</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+<div>
+    <style>
+        .agentlogo {
+            width: 90px;
+            max-height: 80px;
+            border-radius: 5px;
+            right: 5px;
+            top: 5px;
+            position: absolute;
+        }
+    </style>
+    <div style="position:absolute; width:500px">
+
+        <div id="bfw_search_area" style="float: right;">
+            <div id="bfw_search_form">
+                <img src="../assets/css/resources/common/images/icon_search.gif" alt="" />
+                <input type="text" id="bfw_search_text" class="text" name="search_text" value="enter your search phrase" />
+                <input type="image" name="ctl00$Search1$btnSearch" id="Search1_btnSearch" src="../assets/css/resources/common/images/btn_go.gif" align="absmiddle" />
+            </div>
+        </div>
+
+
+        <!-- #bfw_search_area ends -->
+    </div>
+
+    
+    <div style="float: right; margin-top: 35px;">
+        <span style="color: #ffffffc7"><b>System  (Ver:12.73)</b> developed & maintained by </span><a style="color: #ffffffc7" href="http://www.octasol.com" target="_blank">www.Octasol.com</a>
+    </div>
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#bfw_search_text").focus();
+    });
+</script>
+
+                </div>
+            </div>
+            <!-- #bfw_page_header ends -->
+            
+
+
+<div id="bfw_main_menu">
+    <ul class="container">
+        <!-- Home -->
+        <li class="bfw_top_lvl"><a routerLink="dashboard" id="MainMenu1_ahome" title="Home">HOME</a></li>
+        <!-- Explore Disciplines -->
+       
+         <li id="MainMenu1_aTransportMenu" class="bfw_top_lvl"><a class="bfw_arrow" href="#" title="Voucher">TRANSPORT</a><br />
+            <div class="bfw_sub_lvl_1">
+                <ul>
+                    <li><a routerLink="createVoucher" id="MainMenu1_a3" title="CREATE VOUCHER">CREATE VOUCHER</a></li>
+                    <li><a href="Transport/ListTransports.aspx" id="MainMenu1_a4" title="VIEW TRANSPORTs">VIEW TRANSPORTs</a></li>
+                </ul>
+                <div class="bfw_menu_bottom bfw_pngfix">
+                </div>
+            </div>
+        </li>
+        <!-- REPORTS -->
+        <li class="bfw_top_lvl" ><a class="bfw_arrow" href="#" title="Reports">REPORTS</a><br />
+            <div class="bfw_sub_lvl_1">
+                
+                <ul id="MainMenu1_reportsTransport">
+                    <li><a routerLink="arrivalReport" id="MainMenu1_aTR_R1">DAILY ARRIVAL REPORT</a></li>
+                 </ul>
+                <div class="bfw_menu_bottom bfw_pngfix">
+                </div>
+            </div>
+        </li>
+
+        <!-- Manage -->
+        <li id="MainMenu1_aManage" class="bfw_top_lvl"><a class="bfw_arrow" href="#" title="Manage">MANAGE</a><br />
+            <div class="bfw_sub_lvl_1">
+                <ul>
+                    <li><a routerLink="manageParties" id="MainMenu1_aMparties">PARTIES</a></li>
+                    <li><a routerLink="manageStaff" id="MainMenu1_aMStaff">STAFF</a></li>
+                    <li><a routerLink="manageAirlines" id="MainMenu1_aAirline">AIRLINES</a></li>
+                    <li><a routerLink="manageSector"id="MainMenu1_aSectors">SECTORS</a></li>
+                    <li><a routerLink="manageTransport" id="MainMenu1_aTransports">TRANSPORT</a></li>
+                    <li><a routerLink="manageUsers" id="MainMenu1_aManageAdmins">Manage Users</a></li>
+                    <li> <a id="MainMenu1_lnkVoucherStarttop" href="javascript:__doPostBack(&#39;ctl00$MainMenu1$lnkVoucherStarttop&#39;,&#39;&#39;)"></a></li>
+                </ul>
+                <div class="bfw_menu_bottom bfw_pngfix">
+                </div>
+            </div>
+        </li>
+          <!-- Passport -->
+        
+       
+      
+    </ul>
+</div>
+
+            <!-- #bfw_main_menu ends -->
+        </div>
+        <!-- #bfw_header ends -->
+        <div></div>
+        
+
+<div id="bfw_navigation" style="display: block; position: relative; top: 3px; z-index: 499;">
+    <div class="container" >
+        <!-- Breadcrumbs -->
+        <div id="bfw_breadcrumbs" class="span-17">
+            &nbsp;
+                    <span class="bfw_text">
+                        </span>
+              
+        </div>
+        <!-- Welcoming message -->
+        <div id="bfw_welcome_msg" class="span-7 last">
+            <span>Welcome,</span> <span class="bfw_user_name"><a href="#">
+                admin</a>!</span> <span class="bfw_access_status">
+                    </span>
+        </div>
+    </div>
+   
+</div>
+
+
+        <div id="bfw_content">
+            <!--Common DataSources -->
+
+            
+            
+
+            
+            
+            
+            
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$cphContent$ScriptManager1', 'Form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+<router-outlet></router-outlet>                      
+
+
+
+
+            <!-- Sidebar -->
+            <div id="MasterSideBar" class="span-6 last">
+                
+
+                <!-- Discipline menu -->
+            </div>
+
+        </div>
+        <!-- #bfw_content ends -->
+
+        <!-- [#contentContainer] : end -->
+        <!-- macmillan footer -->
+        
+        <!-- cms login button -->
+        <!-- Placeholder for footer -->
+        
+
+        <!-- End placeholder for footer  -->
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                FirejQuery();
+            });
+
+            function FirejQuery() {
+                function highlightLink(pageurl, title) {
+                    if (window.location.href.toLowerCase().indexOf(pageurl.toLowerCase()) > -1) {
+                        $("#bfw_main_menu .bfw_current").removeClass("bfw_current");
+                        $("a[title=" + title + "]").parent(".bfw_top_lvl").addClass('bfw_current');
+                    };
+                };
+
+
+
+                highlightLink("Default", "Home");
+                highlightLink("Reports", "Reports");
+                highlightLink("ListVoucher", "Voucher");
+                highlightLink("Manage", "Manage");
+                highlightLink("Feeding", "Feeding");
+                highlightLink("Account", "Account");
+                highlightLink("Hotel/", "Hotel");
+
+                //chnage theme
+                $("input[src*='AppConstants.Theme']").each(function (i) {
+                    this.src = this.src.replace("AppConstants.Theme", "blue");
+                    //alert(this.src);
+                });
+
+
+                function createSticky(sticky) {
+                    //   debugger;
+                    if (typeof sticky !== "undefined") {
+                        if (sticky.offset() != null) {
+                            var pos = sticky.offset().top;
+
+                            $(window).scroll(function () {
+
+                                $(window).scrollTop() >= pos ? sticky.addClass("fixed") : sticky.removeClass("fixed");
+                            });
+                        }
+                    }
+                }
+
+                // Create sticky header so that header stays on top 
+                $(".fixedheader tbody").append($(".fixedheader tr:nth-child(1)").clone());
+                $(".fixedheader tr:nth-child(2)").find('td').each(function (index) {
+                    $(".fixedheader tr:nth-child(1) th:nth-child(" + index + ")").width($(".fixedheader tr:nth-child(2) td:nth-child(" + index + ")").width());
+                });
+                $(".fixedheader tr:nth-child(1)").first().width($(".fixedheader tr:nth-child(2)").width());
+
+                createSticky($(".fixedheader tr:nth-child(1)"));
+
+            };
+
+            // Hearbeat every 1 min
+            setTimeout("heartbeat()", 60000);
+            function heartbeat() { $.get("/Service.aspx", null, function (data) { }); }
+
+
+        </script>
+        <!-- Google Analytics Call-->
+        
+        <!-- Tracking -->
+        
+        <!-- WebTrends -->
+        
+        <!-- Quantcast code -->
+        
+
+    </form>
+</body>
+
+</html>
+

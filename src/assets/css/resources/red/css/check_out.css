@@ -1,0 +1,108 @@
+/* Your Account */
+#bfw_sub_page_title h1.bfw_page_title {
+	margin-bottom: 10px;
+}
+#bfw_main_content {
+	background: #ffffff url(../../common/images/main_content_bg.gif) top center repeat-y;
+	min-height: 400px;
+	padding-bottom: 8px;
+}
+	#bfw_main_content .bfw_padding {
+		padding: 0 12px;
+	}
+	#bfw_main_content h4.bfw_section_title {
+		font-size: 1.3em;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	#bfw_main_content .bfw_item_list {
+
+	}
+	#bfw_main_content_footer {
+		height: 12px;
+		margin: 0;
+		padding: 0;
+		background: url(../../common/images/main_content_footer_bg.gif) bottom center no-repeat;
+	}
+
+/* Checkout - Bookbag */
+#bfw_book_bag_page .bfw_content_title {
+	background: url(../../common/images/content_title_wide_bg.gif) top center no-repeat;
+}
+#bfw_book_bag_page #bfw_main_content {
+	background: #ffffff url(../../common/images/main_content_wide_bg.gif) top center repeat-y;
+}
+#bfw_book_bag_page #bfw_main_content_footer {
+	background: url(../../common/images/main_content_wide_footer_bg.gif) bottom center no-repeat;
+}
+table#bfw_bookbag {
+	border-bottom: 5px solid #dddac2;
+}
+	table#bfw_bookbag th {
+		border-right: 1px solid #bab48d;
+		padding: 10px;
+		background: #dddac2 url(../images/check-out/bookbag_thead_bg.gif) bottom left repeat-x;
+		color: #424242;
+	}
+	table#bfw_bookbag th.bfw_last_item {
+		border-right: 1px solid #dcd9c2;
+	}
+	table#bfw_bookbag td {
+		border-right: 1px solid #dcd9c2;
+		padding: 10px;
+		background: #ecebde url(../images/check-out/bookbag_tbody_bg.gif) bottom left repeat-x;
+		color: #424242;
+		vertical-align: top;
+	}
+	table#bfw_bookbag table.bfw_inline_table td {
+		border: none;
+		background: none;
+		padding: 0;
+	}
+	table#bfw_bookbag hr.space {
+		background: none;
+		color: #ecebde;
+	}
+	table#bfw_bookbag input#bfw_enrollment {
+		font-size: 11px;
+		line-height: 11px;
+		height: 11px;
+		padding: 3px 5px;
+	}
+
+/* Checkout Process */
+#bfw_check_out_process_3_page .bfw_content_title,
+#bfw_check_out_process_4_page .bfw_content_title {
+	background: url(../../common/images/content_title_wide_bg.gif) top center no-repeat;
+}
+#bfw_check_out_process_3_page #bfw_main_content,
+#bfw_check_out_process_4_page #bfw_main_content {
+	background: #ffffff url(../../common/images/main_content_wide_bg.gif) top center repeat-y;
+}
+#bfw_check_out_process_3_page #bfw_main_content_footer,
+#bfw_check_out_process_4_page #bfw_main_content_footer {
+	background: url(../../common/images/main_content_wide_footer_bg.gif) bottom center no-repeat;
+}
+.bfw_check_out_process_display {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 12px;
+	background: #dddac2;
+	color: #9c9772;
+	font-family: Georgia, Times, serif;
+	font-size: 14px;
+}
+	.bfw_check_out_process_display ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+		.bfw_check_out_process_display ul li {
+			float: left;
+			display: inline;
+			padding: 0;
+			margin-right: 30px;
+		}
+		.bfw_check_out_process_display ul li.bfw_current {
+			color: #114070;
+		}

@@ -1,0 +1,195 @@
+﻿body 
+{
+}
+.gridheader
+{
+	/*background-image:url(images/cell_back2.gif);*/
+	background-color:#c0c0c0;
+	color:#000000;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	border-color:Blue;
+	  
+}
+
+#PaxInfo1_PaxUpdatePanel21 input[type="text"] 
+{
+    border-right: #3366cc 2px solid;
+    border-top: black 2px solid; 
+    display: inline; 
+    border-left: black 2px solid; 
+    color: #ffffff;
+    border-bottom: #3366cc 2px solid; 
+    font-family: Arial;
+    background-color: #336699;
+    height:15px;
+}
+
+#PaxInfo1_PaxUpdatePanel21 select
+{
+     border-right: #3366cc 2px solid;
+    border-top: black 2px solid; 
+    display: inline; 
+    border-left: black 2px solid; 
+    color: #ffffff;
+    border-bottom: #3366cc 2px solid; 
+    font-family: Arial;
+    background-color: #336699;
+    height:22px;
+}
+.grideditcolumn
+{
+	/*background-image:url(images/cell_back4.gif);*/
+	
+	background-color:#E8E8E8;
+	border-color:White;
+	
+
+}
+.gridrow
+{
+	/*background-image:url(images/cell_back.gif);*/
+	/*border-color:Green;*/
+	border-width:20px;
+		 
+}
+.gridcell
+{
+	/*background-image:url(images/cellback6.gif);*/
+}
+
+.Label_1
+{
+    FONT-SIZE: 9pt;
+    COLOR:Blue;
+    FONT-FAMILY: Arial
+    
+}
+.TextBox_1
+{
+    border-right: #3366cc 2px solid;
+    border-top: black 2px solid; 
+    display: inline; 
+    border-left: black 2px solid; 
+    color: #ffffff;
+    border-bottom: #3366cc 2px solid; 
+    font-family: Arial;
+    background-color: #336699;
+}
+
+.TextBox_Green
+{
+    border-right: #006633 2px solid;
+    border-top: black 2px solid;
+    display: inline;
+    border-left: black 2px solid;
+    color: #ffffff;
+    border-bottom: #006633 2px solid;
+    font-family: Arial;
+    background-color: #009933;
+}
+
+.TextBox_2
+{ 
+    color: #336699;
+      font-family: Arial;
+       height:15px;
+        display: inline; 
+        
+   /* border-right: #3366cc 2px solid;
+    border-top: black 2px solid; 
+   
+    border-left: black 2px solid; 
+   
+    border-bottom: #3366cc 2px solid; 
+
+    background-color: #336699;*/
+   
+ 
+}
+
+.kababack
+{
+    background: url(PICS/kaba2.gif) ;
+}
+.gridcell
+{
+  /*background-image: url(images/cellback6.gif);*/
+    background-color: gainsboro;
+}
+.Panel_1
+{
+    margin-left:10px;
+    padding-right:20px;
+    color:DarkBlue;
+    display:table;
+}
+
+.Grid_Selection
+{
+    cursor:pointer;
+    color: #3333cc;
+    text-decoration:'underline';
+    
+    
+}
+.hide
+{
+    display:none;
+}
+.show
+{
+    display:block;
+}
+
+.buttonback
+{
+  background:url(PICS/Main_Page/signin.gif) top left no-repeat;
+  padding-bottom:4px;
+ 
+}
+
+.label2
+{
+     FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+  
+    COLOR:Black;
+    FONT-FAMILY: Arial
+}
+
+.collapsePanelHeader{
+	width:98%;
+	height:30px;
+	background-image: url(PICS/bg-menu-main.png);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+}
+.whitetextColor
+{
+    color:White;
+}
+.centerallign
+{
+    text-align:center;
+}
+
+
+/*AJAX LOADER
+-------------------*/
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0; /*set it to "right: 0;" to have the bar displaying on the top right corner*/
+    z-index: 5000;
+    background-color: #5386BF;
+    font-size: 100%;
+    color: white;
+    padding: 2px;
+    border: 1px solid #CCC;
+    text-align:center;
+}
+
+

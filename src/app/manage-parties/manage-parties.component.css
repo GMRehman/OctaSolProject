@@ -1,0 +1,84 @@
+.editable:hover {
+    background-color: #f3d64a !important;
+}
+
+.imagediv {
+    float: left;
+    /*border-radius: 100%;*/
+    width: 90px;
+}
+
+    .imagediv img {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .imagediv:hover img {
+        opacity: 0.2;
+    }
+
+    .imagediv:hover a {
+        display: block;
+    }
+
+    .imagediv a {
+        display: none;
+        position: relative;
+        left: 23px;
+        top: -45px;
+        font-weight: bold
+    }
+
+.template {
+    overflow: hidden;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome and Opera */
+}
+
+.template table {
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+}
+
+    .template table:nth-child(4) {
+        width: 150px;
+    }
+
+.template .title {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.template tr, .template td {
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #00000026 !important
+}
+
+    .template td:first-child {
+        width: 80px;
+    }
+
+tr, td {
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #000000 !important
+}
+
+.template input {
+    margin: 0px;
+}
+
+.multiline {
+    line-height: 20px;
+}

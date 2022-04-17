@@ -1,0 +1,316 @@
+<div id="content" style="float: left; width: 1075px; height: auto; font-family: Arial; font-size: 10pt;">
+    <div id="cphContent_Panel1" title="Flight Information " class="Panel_1" style="background-color: Transparent; border-color: White; font-family: Times New Roman; font-size: 14pt; font-weight: bold; width: 100%;">
+        <fieldset>
+            <legend>Flight Information 
+            </legend>
+            <table style="width: 100%;" class="Label_1">
+                <tbody><tr>
+                    <th></th>
+                    <th>Sector</th>
+                    <th>Flight</th>
+                    <th>Departure Date &amp; Time</th>
+                    <th>Arrival Date &amp; Time</th>
+                    <th>PNR</th>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Flight To KSA</td>
+                    <td>
+                        <select name="repeatSelect" id="repeatSelect" ng-model="SectDep0" required="required" style="width: 55px;">
+                            <option ng-repeat="option in Sectors" value="option">option</option>
+                        </select>
+                        -
+                    <select name="DDlSectDepart1" id="DDlSectDepart1" ng-model="SectDep1" style="width: 55px;">
+                        <option value="JED">JED</option>
+                        <option value="MED">MED</option>
+                    </select>
+                    </td>
+                    <td>
+                        <select name="DDLFlightDepart" id="DDLFlightDepart" ng-model="AirLineDep" required="required" style="width: 50px;">
+                            <option value="" selected="selected"></option>
+                            <option ng-repeat="option in Flights" value="option">option</option>
+                        </select>
+                        <span>-</span>
+                        <input name="TBFlightDepart" type="text" id="TBFlightDepart" ng-model="FlightNoDep" class="TextBox_2" required="required" style="width: 40px;">
+                    </td>
+                    <td>
+                       
+                        <div style="visibility: visible;">
+                            <input type="date" ng-model="TRV.DEPART_DATE" min="{{'2021-04-14'}}" required="required">
+                            <select name="DDL_Depart_Hour" id="DDL_Depart_Hour" ng-model="DDL_Depart_Hour" ng-change="DDL_Depart_Hour>11?DDL_Depart_AMPM='PM':DDL_Depart_AMPM='AM';" class="TextBox_2" style="height: 20px; width: 45px;">
+                                <option value="">HH</option>
+                                <option ng-repeat="option in Hours" value="option">option</option>
+                            </select>
+                            <select name="DDL_Depart_Min" id="DDL_Depart_Min" ng-model="DDL_Depart_Min" class="TextBox_2" style="height: 20px; width: 45px;">
+                                <option value="">MM</option>
+                                <option ng-repeat="option in Minutes" value="option">option</option>
+                            </select>
+                            <input name="DDL_Depart_AMPM" type="text" value="AM" id="DDL_Depart_AMPM" ng-model="DDL_Depart_AMPM" disabled="disabled" class="aspNetDisabled TextBox_2" style="width: 20px;">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+
+                            <input type="date" ng-model="TRV.ARR_DATE" min="{{'2021-04-14'}}" required="required" ng-change="ksaArrivalChange(); ">
+                           
+                            <select name="DDL_Arrival_Hour" id="DDL_Arrival_Hour" ng-model="DDL_Arrival_Hour" ng-change="DDL_Arrival_Hour>11?DDL_Arrival_AMPM='PM':DDL_Arrival_AMPM='AM';" class="TextBox_2" style="height: 20px; width: 45px;">
+                                <option value="">HH</option>
+                                <option ng-repeat="option in Hours" value="option">option</option>
+                            </select>
+                            <select name="DDL_Arrival_Min" id="DDL_Arrival_Min" ng-model="DDL_Arrival_Min" ng-change="ksaArrivalChange()" class="TextBox_2" style="height: 20px; width: 45px;">
+                                <option value="">MM</option>
+                                <option ng-repeat="option in Minutes" value="option">option</option>
+                            </select>
+                            <input name="DDL_Arrival_AMPM" type="text" value="AM" id="DDL_Arrival_AMPM" ng-model="DDL_Arrival_AMPM" disabled="disabled" class="aspNetDisabled TextBox_2" style="width: 20px;">
+                        </div>
+                    </td>
+                    <td>
+                        <input name="ctl00$cphContent$TB__PNR_Arrival" type="text" id="cphContent_TB__PNR_Arrival" class="TextBox_2" ng-model="TRV.PNR_ARRIVAL" required="required" style="width:100px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Return Flight</td>
+                    <td>
+                        <select name="SectReturn0" id="SectReturn0" ng-model="SectReturn0" style="width: 55px;">
+                            <option value="JED">JED</option>
+                            <option value="MED">MED</option>
+                        </select>
+                        -
+                     <select name="SectReturn1" id="SectReturn1" ng-model="SectReturn1" required="required" style="width: 55px;">
+
+                         <option ng-repeat="option in Sectors" value="option">option</option>
+                     </select>
+
+                    </td>
+                    <td>
+                        <select name="DDlFlightReturn" id="DDlFlightReturn" ng-model="DDlFlightReturn" style="width: 50px;">
+                            <option value="" selected="selected"></option>
+                            <option ng-repeat="option in Flights" value="option">option</option>
+                        </select>
+                        <span>-</span>
+                        <input name="TBFlightReturn" type="text" id="TBFlightReturn" ng-model="TBFlightReturn" class="TextBox_2" style="width: 40px;">
+                    </td>
+
+                    <td>
+                        <input type="date" ng-model="TRV.RETURN_DATE" min="{{'2021-04-14'}}">
+                        <select name="DDL_Return_Hour" id="DDL_Return_Hour" ng-model="DDL_Return_Hour" ng-change="DDL_Return_Hour>11?DDL_Return_AMPM='PM':DDL_Return_AMPM='AM';" class="TextBox_2" style="height: 20px; width: 45px;">
+                            <option value="" selected="selected">HH</option>
+                            <option ng-repeat="option in Hours" value="option">option</option>
+                        </select>
+                        <select name="DDL_Return_Min" id="DDL_Return_Min" ng-model="DDL_Return_Min" class="TextBox_2" style="height: 20px; width: 45px;">
+                            <option value="" selected="selected">MM</option>
+                            <option ng-repeat="option in Minutes" value="option">option</option>
+                        </select>
+                        <input name="DDL_Return_AMPM" type="text" value="AM" id="DDL_Return_AMPM" ng-model="DDL_Return_AMPM" disabled="disabled" class="aspNetDisabled TextBox_2" style="width: 20px;">
+
+                    </td>
+
+                    <td>
+                        <div style="display: none;">
+                            <input type="date" ng-model="TRV.ARRPAK_DATE">
+                            <select name="DDL_ARRPakHour" id="DDL_ARRPakHour" ng-model="DDL_ARRPakHour" class="TextBox_2" style="height: 20px; width: 45px;">
+                                <option value="">HH</option>
+                                <option ng-repeat="option in Hours" value="option">option</option>
+                            </select>
+                            <select name="DDL_ARRPakMin" id="DDL_ARRPakMin" ng-model="DDL_ARRPakMin" class="TextBox_2" style="height: 20px; width: 45px;">
+                                <option value="">MM</option>
+                                <option ng-repeat="option in Minutes" value="option">option</option>
+                            </select>
+                            <input name="TB_ARRPak_AMPM" type="text" value="AM" id="TB_ARRPak_AMPM" ng-model="TB_ARRPak_AMPM" disabled="disabled" class="aspNetDisabled TextBox_2" style="width: 20px;">
+                        </div>
+                    </td>
+
+                    <td>
+                        <input name="ctl00$cphContent$TB__PNR_Return" type="text" id="cphContent_TB__PNR_Return" class="TextBox_2" ng-model="TRV.PNR_RETURN" style="width:100px;">
+                    </td>
+                </tr>
+
+            </tbody></table>
+        </fieldset>
+    </div>
+    <br>
+
+
+    <div id="cphContent_Panel2" class="Panel_1" style="background-color:Transparent;border-color:Green;font-family:Times New Roman;font-size:14pt;font-weight:bold;height:50px;width:100%;">
+<fieldset>
+<legend>
+&nbsp; Mautamer's Information &nbsp;&nbsp;
+</legend>
+        <div>
+            <div id="cphContent_divparty" style="float: left;">
+                <span class="Label_1">Party:</span>
+                <select name="ddlparty" id="ddlparty" ng-model="TRV.PARTY" required="required">
+                    <option value="">Select Party</option>
+                    <option ng-repeat="option in Parties" value="option">option</option>
+                </select>
+
+            </div>
+
+
+            <div style="float: left; margin-left: 15px;">
+                <span class="Label_1">Guest Name:</span>
+                <input type="text" id="txtGroupHeadPh" ng-model="TRV.GroupHead_Or_PhoneNo" class="TextBox_2" maxlength="40" style="width: 250px;" autocomplete="off" required="required">
+                <span class="Label_1">No Of Guests:</span>
+                <input type="number" id="noofPax" ng-model="TRV.NOOFPAX" class="TextBox_2" min="1" max="99" required="required" style="width: 50px;" autocomplete="off">
+            </div>
+
+            <div id="cphContent_divpackage" style="float: left; padding-left: 15px;">
+                <span id="cphContent_lblpackagefordropdown" class="Label_1">Package</span>
+                <select name="Drop_Pakcage" id="Drop_Pakcage" class="TextBox_2" ng-model="TRV.RCvTransportPkg" required="required" style="width: 200px; height: 22px">
+                    <option ng-repeat="option in TransportPAckagesAll | filter:{ Account:TRV.PARTY }" value="option">option</option>
+                    <option ng-repeat="option in TransportPAckagesAll | filter:{ Account:'ALL' } " value="option.Package">option.Package</option>
+                </select>
+            </div>
+
+        </div>
+    
+</fieldset>
+</div>
+    <br>
+    <div id="cphContent_Panel4" class="Panel_1" style="background-color:Transparent;border-color:White;font-family:Times New Roman;font-size:14pt;font-weight:bold;width:100%;">
+<fieldset>
+<legend>
+Transport Detail &nbsp;&nbsp;
+</legend>
+
+
+        <table id="table_trans" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%" class="Label_1">
+            <tbody><tr>
+                <td class="Label_1" style="width: 550px; height: 22px;">
+                    <b>TransportationType:</b>
+                    <div style="width: 600px">
+                        <div ng-repeat="option in TransportType " style="float: left; margin-left: 10px;">
+                            <input type="radio" name="rdlTransport" ng-value="option.Name" ng-model="transport.SelectedTransport">
+                            <label> option</label>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="Label_1" style="width: 350px; height: 4px;" colspan="3"></td>
+            </tr>
+            <tr>
+                <td class="Label_1">
+                    <br>
+                    <b>Transportation Trip:</b>
+
+                    <div class="checkboxes" style="margin-left: 20px;">
+                        <span ng-repeat="option in TransportRoutes">
+                            <input type="checkbox" name="Routeslist" value="option" ng-checked="isCheckBoxChecked(option)" ng-click="toggleSelection(option)">
+                            <label>option</label>
+                        </span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+
+                </td>
+            </tr>
+
+        </tbody></table>
+
+        <br>
+        <div>
+            <table class="transports" unselectable="on">
+                <thead>
+                    <tr>
+                        <th>PICKUP DATE</th>
+                        <th>PICKUP TIME</th>
+                        <th>QTY</th>
+                        <th>ROUTE</th>
+                        <th>SUB ROUTE</th>
+                        <th>DEST_FROM</th>
+                        <th>DEST_TO</th>
+                    </tr>
+                </thead>
+                <tbody><tr ng-repeat="transport in TRV.TRANSPORTs">
+
+                    <td>
+                        <input type="date" ng-model="transport.PICKUP_DATE" min="{{'2021-04-14'}}" required="required" autocomplete="off" placeholder="mmm-dd-yyyy" style="width: 125px;">
+                    </td>
+                    <td>
+                        <select name="pickupTime_HH1" ng-model="transport.PICKUP_TIME_H" class="TextBox_2" required="required" style="height: 20px;">
+                            <option value="">HH</option>
+                            <option ng-repeat="option in Hours" value="option">option</option>
+                        </select>
+                        <select name="pickupTime_MIN1" class="TextBox_2" ng-model="transport.PICKUP_TIME_M" required="required" style="height: 20px;">
+                            <option value="">MM</option>
+                            <option ng-repeat="option in Minutes" value="option">option</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="TB_QTY1" type="number" ng-model="transport.QUANTITY" required="required" class="TextBox_2" style="width: 40px; height: 20px">
+                            <option value="1">1</option>
+                            <option value="0">0</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input name="ROUTE" ng-model="transport.ROUTE" class="TextBox_2" required="required" style="width: 200px" readonly="readonly">
+                    </td>
+                    <td>
+                        <input name="SUB_ROUTE" ng-model="transport.SUBROUTE" class="TextBox_2" style="width: 100px" required="required" readonly="readonly">
+                    </td>
+                    <td>
+                        <input name="DEST_FROM" type="text" ng-model="transport.DEST_FROM" required="required" autocomplete="off" class="TextBox_2" style="width: 225px;">
+                    </td>
+                    <td>
+                        <input name="DEST_TO" type="text" ng-model="transport.DEST_TO" required="required" autocomplete="off" class="TextBox_2" style="width: 225px;">
+                    </td>
+                    <td style="width: 24px;">
+                        <img name="ImageDeleteAcco_1" title="Delete Row" src="/css/resources/blue/images/cancel.png" style="height: 24px; width: 24px; display: none;"></td>
+                </tr>
+            </tbody></table>
+        </div>
+    
+</fieldset>
+</div>
+
+    <br>
+
+    <div style="width: 100%;">
+        <div id="cphContent_Panel7" title="Remarks" class="Panel_remarks" style="background-color:Transparent;border-color:White;font-family:Times New Roman;font-size:14pt;font-weight:bold;width:100%;">
+<fieldset>
+<legend>
+&nbsp; Remarks &nbsp;&nbsp;
+</legend>
+            <div style="text-align: left">
+
+                <textarea ng-model="TRV.REMARKS" rows="2" cols="20" class="TextBox_2" maxlength="200"></textarea>
+            </div>
+        
+</fieldset>
+</div>
+    </div>
+    <div>
+        <div id="validation">
+            <div id="cphContent_ValidationSummary1" style="font-size:9px;width:130px;display:none;">
+
+</div>
+
+        </div>
+        <div style="width: 800px; margin-top: 5px; float: right; text-align: center;">
+            <span id="cphContent_lblError" style="color:Red;"></span>
+            
+            <br>
+           
+            <button id="Button1" type="submit" class="bfw_float_right bfw_btn bfw_small_margin_bottom spinner"> Create Voucher</button>
+            <br>
+           
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var Page_ValidationSummaries =  new Array(document.getElementById("cphContent_ValidationSummary1"));
+    //]]>
+    </script>
+    
+    <script type="text/javascript">
+    //<![CDATA[
+    var cphContent_ValidationSummary1 = document.all ? document.all["cphContent_ValidationSummary1"] : document.getElementById("cphContent_ValidationSummary1");
+    cphContent_ValidationSummary1.showmessagebox = "True";
+    cphContent_ValidationSummary1.showsummary = "False";
+    cphContent_ValidationSummary1.validationGroup = "validgr1";
+    //]]>
+    </script>

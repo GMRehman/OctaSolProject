@@ -1,0 +1,382 @@
+/* Support */
+h2.bfw_content_title {
+	color: #000000;
+}
+#bfw_showcase {
+	background: #ffffff url(../images/support/showcase_01_cutout.jpg) center left no-repeat;
+}
+	#bfw_showcase .bfw_padding {
+		padding: 20px 35px 0 35px;
+	}
+	#bfw_showcase h1 {
+		margin-bottom: 20px;
+	}
+		#bfw_showcase h1 span.bfw_bigger {
+			line-height: 60px;
+		}
+		#bfw_showcase h1 span.bfw_smaller {
+			line-height: 40px;
+			font-size: 60px;
+		}
+		#bfw_showcase h1 span.bfw_xsmaller {
+			font-size: 50px;
+			line-height: 55px;
+		}
+	.dropShadow {
+		-moz-border-radius: 12px;
+		-webkit-border-radius: 12px;
+	}
+.bfw_side_menu_home {
+	color: #ffffff;
+	background: #184322;
+	margin-bottom: 0;
+}
+	.bfw_side_menu_home a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+	.bfw_side_menu_home h5 {
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		font-size: 13px;
+		height: 21px;
+		line-height: 21px;
+		padding: 6px 12px;
+		margin: 0;
+		color: #ffffff;
+		background: #184322;
+	}
+	.bfw_side_menu_home h5.bfw_round_top_bg {
+		background-image: url(../images/side_home_menu_top.gif);
+		background-position: top left;
+		background-repeat: no-repeat;
+	}
+	.bfw_side_menu_home .bfw_section {
+		background: #1e5f33 url(../images/side_home_menu_bg.gif) top left repeat-x;
+	}
+		#bfw_menu_explore_whf_elearning {
+
+		}
+
+	.bfw_side_menu_home ul {
+		list-style: none;
+		padding: 10px 0 10px 15px;
+		margin: 0;
+	}
+		.bfw_side_menu_home ul li {
+			display: block;
+			font-size: 13px;
+			padding: 1px 0 1px 8px;
+			background: url(../images/arrow_right_red_small.gif) center left no-repeat;
+		}
+	.bfw_side_menu_home_bottom_dark {
+		height: 10px;
+		margin-bottom: 10px;
+		background: url(../images/side_home_menu_bottom.gif) bottom left no-repeat;
+	}
+	.bfw_side_menu_home_bottom_light {
+		height: 10px;
+		margin-bottom: 10px;
+		background: url(../images/side_home_menu_bottom_light.gif) bottom left no-repeat;
+	}
+	.bfw_side_menu_home form {
+		padding: 0 12px;
+	}
+		.bfw_side_menu_home form select {
+			width: 200px;
+		}
+#bfw_sub_page_title h1.bfw_page_title {
+	margin-bottom: 10px;
+}
+#bfw_main_content {
+	background: #ffffff url(../../common/images/main_content_bg.gif) top center repeat-y;
+	min-height: 400px;
+	padding-bottom: 8px;
+}
+	#bfw_main_content .bfw_padding {
+		padding: 0 12px;
+	}
+	#bfw_main_content h4.bfw_section_title {
+		font-size: 1.3em;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	#bfw_main_content .bfw_item_list {
+
+	}
+	#bfw_main_content_footer {
+		height: 12px;
+		margin: 0;
+		padding: 0;
+		background: url(../../common/images/main_content_footer_bg.gif) bottom center no-repeat;
+	}
+.bfw_featured_home {
+	margin-bottom: 40px;
+}
+	.bfw_featured_home a {
+		color: #216335;
+		font-weight: bold;
+		text-decoration: none;
+	}
+#bfw_search_our_help_center {
+
+}
+	#bfw_search_our_help_center h4 .bfw_link {
+		font-size: 12px;
+		font-weight: normal;
+		margin-left: 40px;
+		text-decoration: underline;
+	}
+#bfw_advanced_search {
+	margin-bottom: 10px;
+}
+	#bfw_advanced_search input {
+		float: left;
+	}
+	#bfw_advanced_search .bfw_search_text {
+		width: 175px;
+		font-size: 13px;
+		line-height: 19px;
+		height: 19px;
+		padding: 9px 5px;
+		border: 1px solid #dddddd;
+		color: #999999;
+		background: #ffffff;
+		margin: 0 10px 0 0;
+	}
+#bfw_select_by_category {
+	width: 260px;
+}
+.bfw_knowledge_base_list {
+	
+}
+	.bfw_knowledge_base_list h3.bfw_section_title {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 18px;
+		height: 18px;
+		padding: 12px 12px;
+		margin-left: 1px;
+		background: url(../../common/images/box_grad_bg.gif) bottom left repeat-x;
+	}
+	.bfw_article_preview {
+		margin-bottom: 15px;
+	}
+	.bfw_article_preview h4 {
+		color: #216335;
+		margin-bottom: 4px;
+		font-weight: bold;
+	}
+	.bfw_article_preview a {
+		color: #216335;
+	}
+#bfw_search_results_footer {
+	font-size: 13px;
+}
+	#bfw_search_results_footer .bfw_link_back {
+		background: url(../images/arrow_left_black_small.gif) center left no-repeat;
+		padding-left: 15px;
+	}
+	#bfw_search_results_footer .bfw_link_next {
+		background: url(../images/arrow_right_black_small.gif) center right no-repeat;
+		padding-right: 15px;
+	}
+	#bfw_search_results_footer .bfw_left_col {
+		text-align: left;
+	}
+	#bfw_search_results_footer .bfw_center_col {
+		text-align: center;
+	}
+	#bfw_search_results_footer .bfw_right_col {
+		text-align: right;
+	}
+#bfw_training_and_support {
+	padding: 0 0 1px 0;
+}
+	#bfw_training_and_support p {
+		background: url(../images/support/fig_training_and_support.gif) top left no-repeat;
+		padding: 0 0 0 70px;
+		margin-bottom: 5px;
+	}
+	#bfw_training_and_support select {
+		width: 100%;
+		margin-bottom: 0;
+	}
+#bfw_tech_support_hours {
+	
+}
+	#bfw_tech_support_hours .bfw_dates {
+		float: left;
+		width: 80px;
+		margin-right: 2px;
+		font-weight: bold;
+	}
+	#bfw_tech_support_hours .bfw_times {
+		float: left;
+		width: 120px;
+		text-align: right;
+	}
+.bfw_side_yellow_box {
+	margin: 0 0 10px 0;
+/*	background: #dddac2;*/
+}
+	.bfw_side_yellow_box h4.bfw_title {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		line-height: 14px;
+		height: 14px;
+		font-weight: bold;
+		color: #204a75;
+		background: #dddac2;
+		margin: 0;
+		padding: 10px 12px;
+		border-bottom: 1px solid #b2b2b2;
+		
+	}
+	.bfw_side_yellow_box h4.bfw_title2 {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		line-height: 14px;
+		height: 14px;
+		font-weight: bold;
+		color: #204a75;
+		background: #dddac2;
+		margin: 0;
+		padding: 10px 12px;
+	}
+	.bfw_side_yellow_box ul {
+		list-style: none;
+		margin: 0;
+		padding: 10px 0 0 0;
+	}
+		.bfw_side_yellow_box ul li {
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+			.bfw_side_yellow_box ul li h6 {
+				font-weight: normal;
+				font-size: 13px;
+			}
+			.bfw_side_yellow_box ul li p {
+				margin-bottom: 8px
+			}
+			.bfw_side_yellow_box ul li a {
+				text-decoration: none;
+			}
+			.bfw_side_yellow_box ul li .bfw_left_col {
+				float: left;
+				width: 40px;
+				margin-right: 8px;
+			}
+			.bfw_side_yellow_box ul li .bfw_right_col {
+				float: left;
+				width: 158px;
+			}
+#bfw_side_contact_form {
+	margin: 0;
+	padding: 4px 12px;
+}
+	#bfw_side_contact_form #bfw_form_name,
+	#bfw_side_contact_form #bfw_form_email,
+	#bfw_side_contact_form #bfw_form_message {
+		width: 194px;
+		padding: 5px;
+		margin: 0 0 10px;
+		font-size: 12px;
+		line-height: 16px;
+		color: #999999;
+		background: #ffffff;
+		border: 1px solid #cccccc;
+	}
+	#bfw_side_contact_form #bfw_form_message {
+		line-height: 18px;
+		height: 100px;
+	}
+	#bfw_side_contact_form #bfw_form_submit {
+		float: right;
+	}
+#bfw_knowledge_base_search_form {
+	float: right;
+	width: 400px;
+	margin: -5px 0 0 0;
+	padding: 0;
+}
+	#bfw_knowledge_base_search_form #bfw_knowledge_base_search {
+		width: 320px;
+		margin: 0 8px 0 0;
+		padding: 5px;
+		font-size: 13px;
+		color: #999999;
+		background: #ffffff;
+		border: 1px solid #dddddd;
+	}
+	#bfw_knowledge_base_search_form input {
+		float: left;
+	}
+#bfw_knowledge_base_search_form2 {
+	float: right;
+	width: 330px;
+	margin: -5px 0 0 0;
+	padding: 0;
+}
+	#bfw_knowledge_base_search_form2 #bfw_knowledge_base_search {
+		width: 250px;
+		margin: 0 8px 0 0;
+		padding: 5px;
+		font-size: 13px;
+		color: #999999;
+		background: #ffffff;
+		border: 1px solid #dddddd;
+	}
+	#bfw_knowledge_base_search_form2 input {
+		float: left;
+	}
+#bfw_our_sister_sites {
+
+}
+	#bfw_our_sister_sites h5.title {
+
+	}
+	#bfw_our_sister_sites .bfw_logo_container {
+		padding: 0 10px;
+	}
+		#bfw_our_sister_sites .bfw_logo_container ul {
+			list-style: none;
+			background: #efece5;
+			margin: 0;
+			padding: 10px 0;
+		}
+			#bfw_our_sister_sites .bfw_logo_container ul li {
+				float: left;
+/*				width: 72px;*/
+				height: 65px;
+				border-right: 1px solid #dddddd;
+				margin: 0;
+				padding: 0 7px;
+				text-align: center;
+			}
+			#bfw_our_sister_sites .bfw_logo_container ul li.bfw_noborder {
+				border: none;
+			}
+	#bfw_our_sister_sites .bfw_bottom_control {
+		border: none;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

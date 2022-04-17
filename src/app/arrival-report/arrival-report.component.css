@@ -1,0 +1,79 @@
+.dataTables_info {
+    padding-top: 0;
+}
+
+.dataTables_paginate {
+    padding-top: 0;
+}
+
+.css_right {
+    float: right;
+}
+
+#example_wrapper .fg-toolbar {
+    font-size: 0.8em;
+}
+
+#theme_links span {
+    float: left;
+    padding: 2px 10px;
+}
+
+.centeralign {
+    text-align: center;
+}
+
+#cphContent_GridView1 select {
+    max-width: 110px;
+}
+
+.ServiceNo, .GroupHead_Or_PhoneNo,.SYNCSTATUS {
+    border: 1px solid;
+}
+
+td, th {
+    white-space: nowrap;
+    text-align: left !important;
+}
+
+
+.gridview td:nth-child(3) {
+    white-space: nowrap;
+    /*background:#ff0000;*/
+}
+
+.rgFilterBox {
+    width: 100%;
+}
+
+li.rlbItem .rlbText {
+    color: red;
+}
+
+.message {
+    line-height: 37px;
+}
+
+.RadGrid .rgRow,
+.RadGrid .rgAltRow {
+    height: 30px;
+}
+
+.RadGrid_Silk .rgRow,
+.RadGrid_Silk .rgAltRow,
+.RadGrid_Glow .rgRow,
+.RadGrid_Glow .rgAltRow {
+    height: 36px;
+}
+
+.RadGrid_MetroTouch .rgRow,
+.RadGrid_MetroTouch .rgAltRow,
+.RadGrid_BlackMetroTouch .rgRow,
+.RadGrid_BlackMetroTouch .rgAltRow {
+    height: 46px;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+}
+

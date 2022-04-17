@@ -1,0 +1,2105 @@
+.pageFull_mac
+{ *height:1%;
+background-color:#FFFFFF;
+border-top:1pxsolid#C1BFB5;
+margin:9px0pt6px;
+padding:0pt8px7px;
+position:relative;
+}
+
+.pageCol
+{
+	float: left;
+	width: 906px; *height:1%;
+}
+.pageCol_Full
+{
+	background-color: #FFFFFF;
+	border: 6px solid #FFFFFF;
+	border-top: 4px solid #fff;
+	margin-bottom: 6px; *height:1%;
+}
+
+.pageCol:after, .pageCol_Full:after
+{
+	clear: both;
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+.bookCapsule1 .bookDetailsWide
+{
+	float: right;
+	width: 201px;
+}
+
+/* Added to including extra tree level in the awards */
+
+#category_browser .group .categories .subcategories .awardsubcategories
+{
+	margin-left: 16px;
+}
+
+/* bottom margin set to 10, to allow cmslogin button to move up*/
+
+#copyRight
+{
+	font-size: 11px;
+	color: #868686;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Categories.css errors solved with new classes */
+
+#category_browser .group
+{
+	padding-left: 13px;
+	background: url(/imgs/global/bgDottedLine.gif) no-repeat bottom; *background-image:expression(this == this.parentNode.lastChild ? 'none':'url(/imgs/global/bgDottedLine.gif)');
+}
+
+/* Category Text in the Book Capsule for Sub Category page when relevance */
+
+.bookCategory
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin-bottom: 5px;
+}
+
+.bookTeaser
+{
+	font-size: 11px;
+	line-height: 18px;
+	color: #333;
+	margin-top: 7px;
+	font-family: Georgia, "Times New Roman" , Times, serif;
+}
+
+/* Category title width in the Category and Sub Category page */
+
+#categories_feature .categoryTitleLong
+{
+	width: 560px;
+}
+
+#categories_feature .categoryTitleShort
+{
+	width: 320px;
+}
+
+#categories_feature .categories_feature_image
+{
+	/*top: 65px;	 	margin: 0pt; 	padding: 0pt; 	/*position: absolute; 	right: 10px;*/
+	width: 225px;
+	z-index: 1;
+}
+
+.lnkAllPublishersMac
+{
+	/*background:#8BA09D; 	display:block; */ /*position:absolute; 	right:9px;	 	top:10px; 	z-index:400; 	_top:15px; 	_right:18px;*/
+}
+
+
+/* Class for No Results Found in Category  page */
+
+.norecords
+{
+	font-size: 13px;
+	font-family: Georgia, "Times New Roman" , Times, serif;
+	margin: 15px 0px 10px 0px;
+	font-weight: 600;
+	color: #333333;
+	text-align: center;
+}
+
+.currentdisplaycount
+{
+	display: inline;
+	margin-right: 10px;
+	text-align: center;
+}
+
+/* tell a friend map page */
+
+.tellafriend-page
+{
+	width: 844px;
+	float: left;
+	display: inline;
+	color: #999;
+	margin: -10px 0 0 0px;
+	padding: 37px 0 25px 0;
+}
+
+h1.text-tellafriend-page
+{
+	text-indent: -9999px;
+	background: url(/imgs/global/tell_a_friend.gif);
+	background-repeat: no-repeat; /*width: 210px;*/
+	height: 43px;
+}
+.tellafriend-page div.content
+{
+	border-top: 1px solid #ccc;
+	margin-top: -10px;
+	padding: 5px 10px 0 10px;
+	font-size: 15px;
+	color: #444444;
+	font-weight: bold;
+}
+.tellafriend-page a
+{
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 79px;
+	height: 20px;
+	float: left;
+	margin: 17px 4px 0 0;
+	background: url(/imgs/global/btn-send.gif) no-repeat;
+}
+.tellafriend-page ul li
+{
+	margin: 5px 6px 5px 0;
+}
+.tellafriend-page ul li.td1
+{
+	float: left;
+	width: 260px;
+}
+.tellafriend-page ul li.td2
+{
+	float: left;
+	width: 220px;
+}
+.tellafriend-page ul li.td3
+{
+	float: left;
+	width: 196px;
+}
+.tellafriend-page strong
+{
+	font-weight: bold;
+}
+.tellafriend-page ul a
+{
+	color: #999;
+	text-decoration: none;
+	padding: 0 0 0 0;
+}
+.tellafriend-page ul a:hover, .book-name a:hover
+{
+	text-decoration: underline;
+}
+/* end tellafriend page */
+
+/* Category SEO page */
+
+.titlepubcount
+{
+	color: #494949;
+	font-family: Georgia, "Times New Roman" ,Times,serif;
+	font-size: 11px;
+	font-style: italic;
+	font-weight: 500;
+	margin: -20px 0px 10px 3px;
+}
+
+.pagelink
+{
+	color: #676767;
+	font-family: Georgia, "Times New Roman" ,Times,serif;
+	font-size: 12px;
+	line-height: 18px;
+	background-image: url(/imgs/global/bulletRedRightArrow.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	padding: 3px 7px 3px 3px;
+	margin-right: 100px;
+}
+
+.grouptext
+{
+	font-size: 24px;
+	font-family: Helvetica;
+	font-weight: bolder;
+	color: #000000;
+	margin-right: 20px;
+}
+
+.grouplink
+{
+	color: #09739A;
+	font-family: Georgia, "Times New Roman" ,Times,serif;
+	font-size: 11px;
+	background-image: url(/imgs/global/bulletRedDownArrow.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	padding: 0px 7px 3px 3px;
+	margin-right: 30px;
+}
+
+.pseudotable
+{
+	margin-left: -3px;
+}
+
+.pseudolink
+{
+	color: #676767;
+	font-family: Georgia, "Times New Roman" ,Times,serif;
+	font-size: 11px;
+	background-image: url(/imgs/global/bulletRedRightArrow.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	padding: 3px 7px 3px 0px;
+	margin: 0px 50px 0px 0px;
+}
+
+.categorylink
+{
+	color: #3C3C3C;
+	font-family: Helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	background-image: url(/imgs/global/bulletRedRightArrow.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	padding: 0px 7px 3px 0px;
+}
+
+.subcategorylink
+{
+	color: #026D97;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 3px 0px 3px 1px;
+}
+
+.verticalsep
+{
+	width: 600px;
+	background: white url(/imgs/global/bgDottedLineVertical.gif) repeat-y scroll right top;
+	margin-top: 12px;
+}
+
+.currenteditorslist
+{
+	color: #3C3C3C;
+	font-family: Helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 3px 7px 3px 5px;
+}
+
+.editorslistlink
+{
+	color: #026D97;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 18px;
+	text-decoration: none;
+	padding: 3px 7px 3px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+/* Editors List page alias Collection page */
+
+.topbookheadernew
+{
+	min-height: 220px;
+}
+
+#topBookHeader .abstractnew
+{
+	display: block;
+	position: relative;
+	padding: 19px 0 0 0;
+	margin-bottom: 5px;
+}
+
+#topBookHeader .listimage
+{
+	right: 10px; /*position: absolute;	 	margin: 0; 	bottom: 20px; 	padding: 0; 	height: 150px;*/
+	width: 225px;
+}
+
+#topBookHeader .editorslistphotocredit
+{
+	/*position: absolute; 	right: 10px; 	margin: 0; 	bottom: 5px; 	padding: 0;	*/
+	width: 225px;
+	color: #666666;
+	font-family: "Trebuchet MS" , "Times New Roman" ,Times,serif;
+	font-size: 8px;
+}
+
+#topBookHeader .abstractnew p
+{
+	color: #333333;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: Georgia, "Times New Roman" , Times, serif;
+	font-weight: normal;
+}
+
+#topBookHeader .abstractnew photoCredit
+{
+	color: #666666;
+	font-family: "Trebuchet MS" , "Times New Roman" ,Times,serif;
+	font-size: 8px;
+	position: relative;
+	left: 20px;
+	width: 426px;
+}
+
+/*START: Content Template page */
+#topBookHeaderCustom
+{
+	background-color: #FFFFFF;
+	border: 1px solid #C1BFB5;
+	margin: 9px 0pt 6px;
+	padding: 11px 0pt 0pt 20px;
+	position: relative;
+}
+
+#topBookHeaderCustom .emailPrint
+{
+	position: absolute;
+	right: 20px;
+	text-align: right;
+	top: 10px;
+	width: 150px;
+	float: right;
+	padding: 5px 10px 0pt 0pt;
+}
+
+#topBookHeaderCustom h1
+{
+	font-size: 51px;
+	line-height: 46px;
+	padding-top: 15px;
+}
+
+/*
+.sIFR-active h1
+{
+	font-family: Verdana;
+}
+*/
+
+/*END: Content Template page*/
+
+/* You May also be interested in */
+
+.alsointerstedtable
+{
+	margin-left: 5px;
+}
+
+.alsointerstedtable .alsointerstedtd
+{
+	border-right: .5px solid #62615B;
+	padding-right: 10px;
+	width: 271px;
+}
+
+.alsointerstedtable .alsointerstedtditemlast
+{
+	border: none;
+	padding-right: 10px;
+	width: 272px;
+}
+
+.bookCapsule10
+{ *height:1%;
+padding-bottom:13px;
+background:transparenturl(/imgs/global/bgDottedLine.gif)repeat-xscrollcenterbottom;
+margin-top:10px;
+color:#DCD9CC;
+}
+
+.bookCapsule10:after
+{
+	clear: both;
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+.bookCapsule10 .imgAndPrice
+{
+	float: left;
+	font-size: 10px;
+	line-height: 11px;
+	width: 68px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookCapsule10 .imgAndPrice a
+{
+	white-space: nowrap;
+}
+
+.bookCapsule10 .bookDetails
+{
+	float: right;
+	width: 201px;
+}
+
+.bookCapsule10 a.bookTitle
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	padding-bottom: 3px;
+}
+
+.bookCapsule10 .bookSubtitle
+{
+	font-size: 10px;
+	line-height: 10px;
+	margin-top: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookCapsule10 .bookSeries
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.bookCapsule10 .bookSeries label
+{
+	color: #DCD9CC;
+}
+
+.bookCapsule10 .bookAuthor
+{
+	font-family: Georgia, "Times New Roman" , Times, serif;
+	font-size: 13px;
+	font-style: italic;
+	margin-top: 7px;
+}
+
+.bookCapsule10 .bookAuthor label, .bookCapsule10 .bookAuthor span
+{
+	color: #DCD9CC;
+}
+.bookCapsule10 .imprint
+{
+	color: #000;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 7px;
+}
+
+.bookCapsule10 .bookBlurb
+{
+	font-size: 12px;
+	line-height: 18px;
+	color: #DCD9CC;
+	margin-top: 7px;
+	font-family: Georgia, "Times New Roman" , Times, serif;
+}
+
+.bookCapsule10 .bookAward
+{
+	color: #000;
+	font-style: italic;
+}
+
+.bookCapsule10 .publisherName
+{
+	font-style: normal;
+	font-size: 10px;
+	line-height: 10px;
+	color: #666;
+	margin-top: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookCapsule10 .bookReleaseDate
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookCapsule10 .lnkExtraDropdown
+{
+	background: #8BA09D url(/imgs/global/bulletWhiteArrowDown.gif) no-repeat scroll right center;
+	color: #FFFFFF;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 10px;
+	padding: 3px 9px 3px 3px;
+}
+
+/* You May also be interested in */
+
+/* Editors List - Pagination */
+
+.editorslistpagination
+{
+	border: 1px solid #C1BFB5;
+	color: #787774;
+	font-size: 11px;
+	padding: 0px 13px 6px 8px;
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 5px 2px;
+	margin-bottom: 6px;
+}
+
+.editorslistpagination .paginationControls
+{
+	text-align: right;
+	vertical-align: middle;
+}
+.editorslistpagination .paginationControls a img
+{
+	position: relative;
+	top: 4px;
+}
+
+/* Editors List - Pagination */
+
+/*Tours & Events Component*/
+.toursBookHP
+{
+	float: left;
+}
+
+.headerTE
+{
+	/*background:transparent url(../imgs/headers/hToursAndEvents.gif) no-repeat scroll center;*/
+	background: transparent no-repeat scroll center;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+/*Tours & Events Component*/
+
+#related_lists h2
+{
+	background: transparent url(/imgs/headers/hRelatedLists.gif) no-repeat scroll center top;
+	height: 0pt;
+	overflow: hidden;
+	padding-top: 29px;
+	margin-top: 11px;
+}
+
+.sidebar_item
+{
+	padding-top: 12px;
+}
+
+.homePageNewsWrapper
+{
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+/* Retailer.aspx */
+
+#topBookHeader .btnBuyDirect
+{
+	background: #fff url(/imgs/retailer/BuyDirectFromUs.gif) no-repeat scroll 0%;
+	display: block;
+	float: left;
+	height: 21px;
+	overflow: hidden;
+	width: 160px;
+	margin-top: 20px;
+	text-indent: -1999px;
+}
+
+#topBookHeader .otherretailerstext
+{
+	float: left;
+	clear: both;
+	margin-top: 20px;
+}
+
+#topBookHeader .bookImage .imgclass
+{
+	margin-top: 56px;
+}
+
+#topBookHeader .aboutEcom
+{
+	border: 1px solid #CCCCCC;
+	float: left;
+	margin: 20px 0pc 20px 0px;
+	padding: 9px;
+	width: 224px;
+}
+
+#topBookHeader .EcomLinkHeader
+{
+	font-size: 12px;
+	text-align: center;
+}
+
+#topBookHeader strong.price-small
+{
+	display: block;
+	font-size: 11px;
+}
+
+#topBookHeader strong.price-small-text
+{
+	font-size: 11px;
+}
+
+#topBookHeader strong.price-small-strike
+{
+	text-decoration: line-through;
+	font-size: 11px;
+	margin: 0px 0 0 0;
+}
+
+/* Retailer.aspx */
+
+/*Book page */
+#book_CMSContent p
+{
+	font-size: 14px;
+	line-height: 24px;
+}
+#book_CMSContent h2
+{
+	height: 0px;
+	margin-top: 8px;
+	margin-bottom: 11px;
+}
+#book_CMSContent h2
+{
+	text-indent: -9999px;
+	overflow: hidden; /*background: url(../undefined) no-repeat center;*/
+	display: block;
+}
+
+#subcontent h2
+{
+	overflow: hidden;
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: 8px;
+	margin-bottom: 11px;
+}
+
+#stayInTouch .bgSearch
+{
+	margin-top: 15px;
+}
+
+#stayInTouch p
+{
+	color: #333333;
+	font-family: Georgia, "Times New Roman" ,Times,serif;
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 5px;
+}
+
+#video
+{
+	/* 	border-right:11px solid #FFFFFF; 	padding:0pt; 	padding-bottom:10px; 	width:578px; */
+}
+#video h2
+{
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/imgs/book/hVideo.gif) no-repeat center;
+	display: block;
+}
+
+#recommendations .itemRecommendation
+{
+	background: url(/imgs/global/bgDottedLine.gif) repeat-x bottom center;
+	padding: 5px 0 5px 0;
+	color: #000;
+	font-style: italic;
+}
+
+#topBookHeader #btnPre-Order
+{
+	background: #fff url(/imgs/book/lnkPreOrder.gif) no-repeat scroll 0%;
+	display: block;
+	float: left;
+	height: 21px;
+	overflow: hidden;
+	width: 80px;
+	margin-left: 5px;
+	text-indent: -1999px;
+}
+
+#topBookHeader #btnBack-Order
+{
+	background: #fff url(/imgs/book/lnkBackOrder.gif) no-repeat scroll 0%;
+	display: block;
+	float: left;
+	height: 21px;
+	overflow: hidden;
+	width: 80px;
+	margin-left: 5px;
+	text-indent: -1999px;
+}
+
+#interiors h2
+{
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/imgs/book/hInteriorView.gif) no-repeat center;
+	display: block;
+}
+
+#interiors img
+{
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+#toc h2
+{
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/imgs/book/hTableOfContents.gif) no-repeat center;
+	display: block;
+}
+
+#biography h2
+{
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/imgs/book/hBiography.gif) no-repeat center;
+	display: block;
+}
+
+/* Author Extras Page */
+
+.topAuthorSection
+{
+	background-color: #FFFFFF;
+	border-top: 1px solid #C1BFB5;
+	margin: 9px 0pt 6px;
+	position: relative;
+}
+
+.bottomAuthorSection
+{
+	background-color: #FFFFFF;
+	margin: 5px 0pt 6px;
+	position: relative;
+}
+
+.topAuthorSection .authorImage
+{
+	margin-top: 30px;
+	width: 305px;
+}
+
+.authorDetails
+{
+	margin-left: 0px;
+	width: 878px;
+}
+
+.authorDetails .relatedLinks
+{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	margin-top: -5px;
+	text-transform: uppercase;
+}
+
+.authorDetails .relatedLinks a
+{
+	font-weight: normal;
+	text-transform: none;
+}
+
+.authorDetails h2
+{
+	font-size: 0px;
+	height: 4px;
+	margin-bottom: 11px;
+}
+
+.uslistpricestrike
+{
+	text-decoration: line-through;
+}
+
+/* Home pages Books drop down   */
+
+ul#impDropdown #impBooksMenuBox_cmac
+{
+	width: 520px;
+}
+
+ul#impDropdown #impBooksMenuBox_cmac_sml
+{
+	width: 460px;
+}
+
+ul#impDropdown #impBooksMenuBox_cmac_xsml
+{
+	width: 260px;
+}
+
+ul#impDropdown #impBooksMenuBox_cmac_xl
+{
+	width: 610px;
+}
+
+/*widget page*/
+.section
+{
+	background: url(   "/imgs/global/bgDottedLine.gif" ) top repeat-x;
+	margin: 0 0 10px 0;
+	padding: 6px 0 0 0;
+}
+
+
+.section h3
+{
+	color: #000000;
+	font-size: 1.2em; /*margin: 0;     padding: 0;*/
+}
+.highlightBox
+{
+	background-color: #eee;
+	float: left;
+	margin: 10px 0 10px 0;
+	width: 100%;
+	display: block;
+	font-family: Arial,Verdana,Helvetica,sans-serif;
+}
+
+.highlightBox h3
+{
+	margin: 0px;
+	background-color: #888;
+	color: #fff;
+	font-size: 1em;
+	padding: 4px 6px;
+}
+
+.highlightBox .text
+{
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	color: #555;
+	font-size: .9em;
+	padding: 10px 10px 0 10px;
+}
+
+.highlightBox p
+{
+	margin: 0 0 10px 0;
+}
+
+.highlightBox ul
+{
+	display: block;
+	margin: 1px 10px;
+	padding: 5px 10px;
+}
+
+.highlightBox ul.indent
+{
+	margin-left: 22px;
+}
+
+.highlightBox ul li, .bullet
+{
+	line-height: 1.2em;
+	list-style-image: url(/images/small_bullet.gif);
+	margin-bottom: 10px;
+}
+
+.videoSubMenu
+{
+	background-color: #F6F4EB;
+	float: right;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+.mediaTitle
+{
+	font-size: 18px;
+}
+
+.pageColR_1 .subListVideo
+{
+	width: 273px; *width:270px;
+margin:10px10px00;
+padding-bottom:5px;
+background:url(/imgs/global/bgDottedLine.gif)repeat-xbottomcenter;
+}
+
+.pageColR_1 .subListVideo:last-child
+{
+	background: none;
+}
+
+
+.pageColR_1 .subListVideo .sublistDescription
+{
+	float: right;
+	width: 221px;
+}
+
+/* Search results */
+#searchResults_custom h2
+{
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/imgs/global/searchresults_header.gif) no-repeat 5px;
+	display: block;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+/* Advsearch results */
+#advsearchResults_custom h2
+{
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/imgs/global/advancedsearch_header.gif) no-repeat 5px;
+	display: block;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#googleSearch
+{
+	width: 285px;
+	height: 70px;
+	position: absolute;
+	left: 625px;
+	top: 230px;
+	border: solid 2px #c1bfb5;
+	padding: 5px 0px 0px 5px;
+}
+
+/* Start - menu */
+#publishersMenuBox .menuBox_B
+{
+	float: left;
+	width: 150px;
+	margin-left: 5px;
+	background: url(/imgs/global/bgDottedLineVertical.gif) repeat-y right center;
+	padding-bottom: 300px;
+	margin-bottom: -300px;
+}
+
+/*End - menu */
+
+/* Book Main Info */
+
+#topBookHeader #btnBuyDirectFromUs
+{
+	background: #fff url(/imgs/retailer/BuyDirectFromUs.gif) no-repeat scroll 0%;
+	display: block;
+	float: left;
+	height: 21px;
+	overflow: hidden;
+	width: 160px;
+	margin-left: 5px;
+	text-indent: -1999px;
+}
+
+#topBookHeader .bookInfo .bookacademiccart
+{
+	background: transparent url(/imgs/global/bgDottedLine8f.gif) repeat-x scroll center bottom;
+	margin-top: 5px;
+	padding: 15px 0px 10px 0px;
+}
+
+#topBookHeader .bookInfo .bookacademiccart a
+{
+	font-family: Arial,Helvetica,sans-serif;
+	padding-right: 50px;
+	color: #0073A3;
+}
+
+/* Book Main Info */
+
+/* Reading Group Guide class for book Capsules */
+
+.reading_guide
+{
+	color: #666666;
+	display: inline;
+	font-size: 10px;
+	padding: 3px 5px;
+}
+
+.reading_guide a.audio
+{
+	background-image: url(/imgs/global/audio.jpg);
+	height: 12px;
+	margin: 0pt 0px;
+	width: 15px;
+}
+.reading_guide a.ebook
+{
+	background-image: url(/imgs/global/ebook.jpg);
+	height: 12px;
+	margin: 0pt 2px;
+	width: 9px;
+}
+
+.imgrepl
+{
+	display: -moz-inline-box;
+	display: inline-block;
+	background: transparent none 0 0 no-repeat;
+	text-indent: -3000px;
+	font: 0/0 Arial;
+	overflow: hidden;
+	color: rgba(255,255,255,0);
+	vertical-align: bottom;
+}
+
+.carouselTitle
+{
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.1px;
+	padding: 3px 0 3px 0;
+}
+
+/* Reading Group Guide class for book Capsules */
+
+/* Editos List Author Class */
+
+.bookCapsule3 .author p .editorslistauthormore
+{
+	font-family: Georgia, "Times New Roman" ,Times,serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+}
+
+/* Editos List Author Class */
+
+h2#hBooksMayLike
+{
+	clear: both;
+	border-bottom: 4px solid #d2d0c9;
+	height: 52px;
+}
+
+#hBooksMayLike
+{
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/imgs/headers/hBooksYouMightLike.gif) no-repeat center;
+	display: block;
+}
+
+h2.FSGBYR
+{
+	/* Overrides fsgbyr h2 */
+	border-bottom: 4px solid #cbc9ca;
+	height: 40px;
+	margin-top: 12px;
+}
+
+/* For BookCapsule div's with new Excerpt Listen and Read Images */
+
+.bookCapsule1 .bookTools
+{
+	/*margin-top: 25px;*/
+	margin-top: 25px;
+	margin-bottom: -5px;
+	margin-left: 2px;
+}
+
+.bookCapsule1 .bookTools .bookExcerptLinks
+{
+	font-size: 10px;
+	color: #666;
+	display: inline;
+}
+
+/* additional class for other books you might like */
+
+.otherBooks .bookCapsule1 .bookTools span
+{
+	background-color: inherit;
+}
+
+.bookCapsule1 .bookTools .bookExcerptLinks label.excerpttext
+{
+	position: absolute;
+	margin-top: -20px;
+	left: -2px;
+	display: block;
+}
+
+.bookCapsule1 .bookTools .bookExcerptLinks a.excerptread
+{
+	background: transparent url(/imgs/global/excerpt_paper_15x20_trans_w.gif) no-repeat scroll 0%;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding-top: 30px;
+	position: relative;
+	top: -15px;
+	right: -3px;
+	left: -2px;
+	overflow: hidden;
+}
+
+/* additional class for other books you might like */
+.otherBooks .bookCapsule1 .bookTools .bookExcerptLinks a.excerptread
+{
+	color: #E9E7DF;
+}
+
+.bookCapsule1 .bookTools .bookExcerptLinks a.excerptlisten
+{
+	background: transparent url(/imgs/global/Excerpt_Listen_25x16_trans_.gif) no-repeat scroll 0%;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding-top: 25px;
+	position: relative;
+	top: -12px;
+	left: -5px;
+	right: -1px;
+	overflow: hidden;
+}
+
+/* additional class for other books you might like */
+.otherBooks .bookCapsule1 .bookTools .bookExcerptLinks a.excerptlisten
+{
+	color: #E9E7DF;
+}
+
+.bookCapsule1 .bookTools .bookExcerptLinks a.capsulevideo
+{
+	background: transparent url(/imgs/global/video_15x20_trans_web.gif) no-repeat top right;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding: 20px 15px 20px 10px;
+	position: relative;
+	top: -3px;
+	right: 3px;
+	left: -1px;
+	overflow: hidden;
+}
+
+
+.bookCapsule1 .bookTools .bookExcerptLinks a.capsuleawards
+{
+	background: transparent url(/imgs/global/iconAwards.gif) no-repeat top right;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding: 20px 15px 20px 10px;
+	position: relative;
+	top: -3px;
+	right: 3px;
+	left: -1px;
+	overflow: hidden;
+}
+
+.bookCapsule3 .bookTools .bookExcerptLinks a.capsuleawards
+{
+	background: transparent url(/imgs/global/iconAwards.gif) no-repeat top right;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding: 20px 15px 20px 10px;
+	position: relative;
+	top: -3px;
+	right: 3px;
+	left: -1px;
+	overflow: hidden;
+}
+
+.bookCapsule10 .bookTools .bookExcerptLinks a.capsuleawards
+{
+	background: transparent url(/imgs/global/iconAwards.gif) no-repeat top right;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding: 20px 15px 20px 10px;
+	position: relative;
+	top: -3px;
+	right: 3px;
+	left: -1px;
+	overflow: hidden;
+}
+
+.bookCapsule1 .bookTools .bookExcerptLinks a.capsulerecommend
+{
+	background: transparent url(/imgs/global/iconRecommendations.gif) no-repeat top right;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding: 20px 15px 20px 10px;
+	position: relative;
+	top: -3px;
+	right: 3px;
+	left: -1px;
+	overflow: hidden;
+}
+
+.bookCapsule3 .bookTools .bookExcerptLinks a.capsulerecommend
+{
+	background: transparent url(/imgs/global/iconRecommendations.gif) no-repeat top right;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding: 20px 15px 20px 10px;
+	position: relative;
+	top: -3px;
+	right: 3px;
+	left: -1px;
+	overflow: hidden;
+}
+
+
+
+.bookCapsule10 .bookTools .bookExcerptLinks a.capsulerecommend
+{
+	background: transparent url(/imgs/global/iconRecommendations.gif) no-repeat top right;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding: 20px 15px 20px 10px;
+	position: relative;
+	top: -3px;
+	right: 3px;
+	left: -1px;
+	overflow: hidden;
+}
+
+
+
+
+/* additional class for other books you might like */
+.otherBooks .bookCapsule1 .bookTools .bookExcerptLinks a.capsulevideo
+{
+	color: #E9E7DF;
+}
+
+.bookCapsule1 .bookTools .reading_guide
+{
+	display: inline;
+	font-size: 10px;
+	padding: 3px 5px;
+	color: #666;
+}
+
+.bookCapsule1 .bookTools .reading_guide a.audio
+{
+	background: transparent url(/imgs/global/audiobook_21x20_trans_web.gif) no-repeat bottom left;
+	overflow: hidden;
+	display: inline;
+	padding: 0px 0px 20px 20px;
+	float: none;
+	position: relative;
+	left: 2px;
+	top: -16px;
+}
+
+.bookCapsule1 .bookTools .reading_guide a.ebook
+{
+	/*background: transparent url(/imgs/global/ebook_19x20_trans_web.gif) no-repeat bottom left;*/
+	background: transparent url(/imgs/book/iconEbook.gif) no-repeat bottom left;
+	overflow: hidden;
+	display: inline;
+	padding: 0px 0px 20px 20px;
+	float: none;
+	position: relative;
+	top: -16px;
+
+}
+
+/* For BookCapsule div's with new Excerpt Listen and Read Images */
+
+.bookCapsule1 .divAudioAndEbook
+{
+	margin-top: 10px;
+	padding-left: 3px;
+}
+.bookCapsule1 .divAudioAndEbook .audio
+{
+	background: transparent url(/imgs/global/audiobook_21x20_trans_web.gif) no-repeat top left;
+	float: left;
+	height: 0pt;
+	overflow: hidden;
+	padding: 35px 0px 0px 0px;
+	position: relative;
+	left: 1px;
+}
+
+.bookCapsule1 .divAudioAndEbook .ebook
+{
+	/*background: transparent url(/imgs/global/ebook_19x20_trans_web.gif) no-repeat top left;*/
+	background: transparent url(/imgs/book/iconEbook.gif) no-repeat top left;
+	float: left;
+	height: 0pt;
+	overflow: hidden;
+	padding: 35px 0px 0px 0px;
+	position: relative;
+	left: 1px;
+}
+
+/* New Styles for Audio Edition and EBook */
+
+/* For BookCapsule div's with new Excerpt Listen and Read Images, this is for Also Interested In*/
+
+.bookCapsule10 .bookTools
+{
+	margin-top: 30px;
+	padding: 0px;
+	display: block;
+}
+
+.bookCapsule10 .bookTools .bookExcerptLinks
+{
+	font-size: 10px;
+	color: #666;
+	display: inline;
+}
+
+.bookCapsule10 .bookTools .bookExcerptLinks label.excerpttext
+{
+	position: absolute;
+	margin-top: -20px;
+	left: -2px;
+	display: block;
+}
+
+.bookCapsule10 .bookTools .bookExcerptLinks a.excerptread
+{
+	background: transparent url(/imgs/global/excerpt_paper_15x20_trans_w.gif) no-repeat scroll 0%;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding-top: 30px;
+	position: relative;
+	top: -15px;
+	right: -3px;
+	left: -2px;
+	overflow: hidden;
+}
+
+.bookCapsule10 .bookTools .bookExcerptLinks a.excerptlisten
+{
+	background: transparent url(/imgs/global/Excerpt_Listen_25x16_trans_.gif) no-repeat scroll 0%;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding-top: 25px;
+	position: relative;
+	top: -12px;
+	left: -5px;
+	right: -1px;
+	overflow: hidden;
+}
+
+.bookCapsule10 .bookTools .bookExcerptLinks a.capsulevideo
+{
+	background: transparent url(/imgs/global/video_15x20_trans_web.gif) no-repeat top right;
+	color: #FFFFFF;
+	float: left;
+	display: inline;
+	padding: 20px 15px 20px 10px;
+	position: relative;
+	top: -4px;
+	right: 3px;
+	left: -1px;
+	overflow: hidden;
+}
+
+.bookCapsule10 .bookTools .reading_guide
+{
+	display: inline;
+	font-size: 10px;
+	padding: 3px 5px;
+	color: #666;
+}
+
+.bookCapsule10 .bookTools .reading_guide a.audio
+{
+	background: transparent url(/imgs/global/audiobook_21x20_trans_web.gif) no-repeat bottom left;
+	overflow: hidden;
+	display: inline;
+	padding: 0px 0px 20px 20px;
+	float: none;
+	position: relative;
+	left: 2px;
+	top: -16px;
+}
+
+.bookCapsule10 .bookTools .reading_guide a.ebook
+{
+	/*background: transparent url(/imgs/global/ebook_19x20_trans_web.gif) no-repeat bottom left;*/
+	background: transparent url(/imgs/book/iconEbook.gif) no-repeat top left;
+	overflow: hidden;
+	display: inline;
+	padding: 0px 0px 20px 20px;
+	float: none;
+	position: relative;
+	top: -16px;
+}
+
+
+.bookCapsule10 .divAudioAndEbook .audio
+{
+	background: transparent url(/imgs/global/audiobook_21x20_trans_web.gif) no-repeat top left;
+	float: left;
+	height: 0pt;
+	overflow: hidden;
+	padding: 35px 0px 0px 0px;
+	position: relative;
+	left: 1px;
+}
+
+.bookCapsule10 .divAudioAndEbook .ebook
+{
+	/*background: transparent url(/imgs/global/ebook_19x20_trans_web.gif) no-repeat top left;*/
+	background: transparent url(/imgs/book/iconEbook.gif) no-repeat top left;
+	float: left;
+	height: 0pt;
+	overflow: hidden;
+	padding: 35px 0px 0px 0px;
+	position: relative;
+	left: 1px;
+}
+
+/* For BookCapsule div's with new Excerpt Listen and Read Images */
+
+
+/* youMayAlsoBeInterested classess */
+
+#youMayAlsoBeInterested
+{
+	background: #34332f url(/imgs/book/bgYouMayAlsoBeInterested.gif) repeat-x;
+	color: #dcd9cc; *height:1%;
+padding:10px;
+padding-top:0px;
+font-family:Georgia,"Times New Roman",Times,serif;
+_width:886px;
+overflow:hidden;
+margin:4px010px0;
+clear:both;
+}
+
+#interetedItems
+{
+	overflow: hidden;
+}
+
+#youMayAlsoBeInterested .alsointerstedtd a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #40abd8;
+}
+
+#youMayAlsoBeInterested .alsointerstedtditemlast a
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #40abd8;
+}
+
+#youMayAlsoBeInterested a:hover
+{
+	color: #95cce3;
+}
+
+#youMayAlsoBeInterested:after
+{
+	clear: both;
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+#youMayAlsoBeInterested h2
+{
+	border-bottom: 4px solid #686763;
+}
+
+#youMayAlsoBeInterested .subCol
+{
+	border-right: 1px solid #62615B;
+	float: left;
+	margin: 10px 14px -500px 0pt;
+	padding-bottom: 500px;
+	padding-right: 13px;
+	width: 276px; *height:1%;
+}
+
+#youMayAlsoBeInterested #subCol3
+{
+	padding-right: 0;
+	margin-right: 0;
+	border: none;
+}
+
+#youMayAlsoBeInterested .subCol:after
+{
+	clear: both;
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+#youMayAlsoBeInterested .subCol .subColDescription
+{
+	float: right;
+	width: 199px;
+}
+#youMayAlsoBeInterested .subCol .sectionFooter
+{
+	clear: both;
+	background: transparent url(/imgs/global/bgDottedSilver.gif) repeat-x scroll center top;
+}
+#youMayAlsoBeInterested .subCol .floatPic
+{
+	float: left;
+}
+
+#youMayAlsoBeInterested .sectionFooter a
+{
+	color: #dcd9cc;
+	font-family: Georgia, "Times New Roman" , Times, serif;
+}
+
+#youMayAlsoBeInterested .sectionFooter a:hover
+{
+	color: #fff;
+}
+
+#youMayAlsoBeInterested .subColType
+{
+	color: #dcd9cc;
+	font-style: italic;
+}
+
+
+#youMayAlsoBeInterested .tourDates
+{
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools .bookExcerptLinks a
+{
+	color: #34332F;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools
+{
+	margin-top: 30px;
+	padding: 0px;
+	display: block;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools .bookExcerptLinks
+{
+	font-size: 10px;
+	color: #666;
+	display: inline;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools .bookExcerptLinks label.excerpttext
+{
+	position: absolute;
+	margin-top: -20px;
+	left: -2px;
+	display: block;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools .bookExcerptLinks a.excerptread
+{
+	background: transparent url(/imgs/global/excerpt_paper_15x20_trans_w.gif) no-repeat scroll 0%;
+	color: #34332F;
+	float: left;
+	display: inline;
+	padding-top: 30px;
+	position: relative;
+	top: -15px;
+	right: -3px;
+	left: -2px;
+	overflow: hidden;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools .bookExcerptLinks a.excerptlisten
+{
+	background: transparent url(/imgs/global/Excerpt_Listen_25x16_trans_.gif) no-repeat scroll 0%;
+	color: #34332F;
+	float: left;
+	display: inline;
+	padding-top: 25px;
+	position: relative;
+	top: -12px;
+	left: -5px;
+	right: -1px;
+	overflow: hidden;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools .bookExcerptLinks a.capsulevideo
+{
+	background: transparent url(/imgs/global/video_15x20_trans_web.gif) no-repeat top right;
+	color: #34332F;
+	float: left;
+	display: inline;
+	padding: 20px 15px 20px 10px;
+	position: relative;
+	top: -4px;
+	right: 3px;
+	left: -1px;
+	overflow: hidden;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools .reading_guide
+{
+	display: inline;
+	font-size: 10px;
+	padding: 3px 5px;
+	color: #666;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools .reading_guide a.audio
+{
+	background: transparent url(/imgs/global/audiobook_21x20_trans_web.gif) no-repeat bottom left;
+	overflow: hidden;
+	display: inline;
+	padding: 0px 0px 20px 20px;
+	float: none;
+	position: relative;
+	left: 2px;
+	top: -16px;
+}
+
+#youMayAlsoBeInterested .bookCapsule10 .bookTools .reading_guide a.ebook
+{
+	/*background: transparent url(/imgs/global/ebook_19x20_trans_web.gif) no-repeat bottom left;*/
+	background: transparent url(/imgs/book/iconEbook.gif) no-repeat top left;
+	overflow: hidden;
+	display: inline;
+	padding: 0px 0px 20px 20px;
+	float: none;
+	position: relative;
+	top: -16px;
+}
+
+/* youMayAlsoBeInterested classess */
+
+/* Author Bolg Classes */
+
+#authorblog h3
+{
+	border-bottom: 4px solid #8BA09D;
+	display: block;
+	font-size: 21px;
+	margin-bottom: 3px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+#authorblog .firstblog
+{
+	display: block;
+	padding: 5px 0px 12px 0px;
+}
+
+#authorblog .firstblog div
+{
+	font-size: 12px;
+}
+
+#authorblog .firstblog .bloglink
+{
+	display: block;
+}
+
+#authorblog .firstblog .blogdate
+{
+	display: block;
+	float: right;
+}
+
+#authorblog .firstblog .blogdesc
+{
+	display: block;
+	margin-top: 15px;
+	padding: 8px;
+}
+
+#authorblog .firstblog .blogmore
+{
+	background: transparent url(/imgs/global/bulletRedRightArrow.gif) no-repeat scroll right center;
+	float: right;
+	padding-right: 8px;
+}
+
+#authorblog .otherblogs
+{
+	display: block;
+	margin-bottom: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#authorblog .otherblog div
+{
+	font-size: 11px;
+}
+
+#authorblog .otherblog
+{
+	margin-top: 10px;
+	background: transparent url(/imgs/global/bgDottedLine.gif) repeat-x scroll center top;
+	padding-top: 10px;
+	padding-bottom: 8px;
+}
+
+#authorblog .otherblog .bloglink
+{
+	display: block;
+}
+
+#authorblog .otherblog .blogdate
+{
+	margin-top: 3px;
+	display: block;
+	float: right;
+}
+
+#authorblog .divsubscribe
+{
+	margin-top: 10px;
+	padding-top: 8px;
+	border-top: 4px solid #8BA09D;
+}
+
+#authorblog .bloglinkrss
+{
+	background: transparent url(/imgs/global/bulletRedRightArrow.gif) no-repeat scroll right center;
+	padding-right: 8px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#authorblog .subscribelink
+{
+	background: transparent url(/imgs/global/rss14x14.gif) no-repeat scroll left center;
+	margin-top: 5px;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 18px;
+	padding-top: 2px;
+}
+
+/* Author Bolg Classes */
+
+/* Book Page Classes */
+
+.booknextprevious
+{
+	background-color: #FFFFFF;
+	border: 2px solid #8BA09D;
+	color: #333333;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	margin: 0 0 6px 0;
+	padding: 10px 10px 7px;	
+}
+
+.booknextprevious a
+{
+	display: block;
+	padding-top: 3px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+.booknextprevious .nexttitle
+{
+	margin-bottom: 10px;
+}
+
+.bookrelcategoriesheading
+{
+	background-color: #FFFFFF;
+	border: 2px solid #8BA09D;
+	color: #333333;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 1px 0px 0px 0px;
+	padding: 10px 10px 7px;	
+	display: block;
+}
+
+.bookrelcategoriesheading .unbold
+{
+	font-size: 90%;
+	font-weight: normal;
+}
+
+.onlyheading
+{
+	margin-bottom: 6px;
+}
+
+.bookrelcategories
+{
+	background-color: #FFFFFF;
+	border: 2px solid #8BA09D;
+	border-top: 0px;
+	color: #333333;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	margin: 0 0 6px 0;
+	padding: 5px 10px 7px;	
+}
+
+.bookrelcategories a
+{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+.bookrelcategories .category
+{
+	font-weight: bold;
+	padding: 5px 0px 2px 0px;
+	display: block;
+}
+
+.bookrelcategories .grayed
+{
+	color: Gray;
+}
+
+.bookrelcategories .unblock
+{
+	display: inline;
+}
+
+.bookrelcategories .subcategory
+{
+	padding: 2px 0px 2px 10px;
+	display: block;
+}
+
+.bookrelcategories .subcategoryfirst
+{
+	padding: 2px 0px 2px 10px;
+	display: block;
+	font-weight: bold;
+}
+
+/* Book Page Classes */
+
+/* Category Page */
+
+#category_items
+{
+	margin: 5px 0px 0px 0px;
+	position: relative;
+}
+
+.relcategoriesheading
+{
+	background-color: #FFFFFF;
+	border: 2px solid #8BA09D;
+	color: #333333;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 1px 0px 0px 0px;
+	padding: 8px 10px 7px;	
+}
+
+.relcategoriesheadingTBFC
+{
+	background-color: #FFFFFF;
+	border: 2px solid #8BA09D;
+	color: #333333;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	height: 91px;
+	margin: 6px 0px 6px 0px;
+}
+
+.relcategoriesheading .unbold
+{
+	font-size: 90%;
+	font-weight: normal;
+}
+
+.relcategoriesheading .publisherdiv
+{
+	margin-top: -7px;
+	position: relative;
+	z-index: 550;
+}
+.catpublishermenu
+{
+	margin: 6px 0 6px 0;
+	height: 21px;
+}
+
+.onlyheading
+{
+	margin-bottom: 6px;
+}
+
+.relcategories
+{
+	background-color: #FFFFFF;
+	border: 2px solid #8BA09D;
+	border-top: 0px;
+	color: #333333;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 10px;
+	margin: 0 0 6px 0;
+	padding: 5px 10px 7px;	
+}
+
+.relcategories a
+{
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 10px;
+}
+
+.relcategories .allcategory
+{
+	padding: 0px 0px 2px 0px;
+	display: block;
+}
+
+.relcategories .category
+{
+	padding: 0px 0px 2px 10px;
+	display: block;
+}
+
+.grayed
+{
+	color: Gray;
+}
+
+.relcategories .unbold
+{
+	font-weight: normal;
+}
+
+.relcategories .unblock
+{
+	display: inline;
+}
+
+.relcategories .subcategory
+{
+	padding: 0px 0px 2px 20px;
+	display: block;
+}
+
+.relcategories .subcategoryfirst
+{
+	padding: 2px 0px 2px 10px;
+	display: block;
+	font-weight: bold;
+}
+
+.relcategories .showhidelink
+{
+	padding: 0px 0px 2px 0px;
+	display: block;
+	color: Black;
+}
+
+.breadcrumblink
+{
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 10px;
+}
+
+.breadcrumbtext
+{
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 10px;
+	color: Gray;
+}
+
+.breadcrumbarrow
+{
+	margin: 0px 5px 0px 5px;
+	font-size: 12px;
+	font-weight: bolder;
+	color: rgb(0, 115, 163);
+}
+
+#categories_feature .emailPrintCustom
+{
+	width: 50px;
+	margin-bottom: -15px;
+	margin-left: 445px;
+}
+
+/* Category Page */
+
+/* Academic Book Page */
+
+#hOtherBooksAcademic
+{
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/imgs/headers/hKeepInMind.gif) no-repeat center;
+	display: block;
+}
+
+h2#hOtherBooksAcademic
+{
+	clear: both;
+	border-bottom: 4px solid #d2d0c9;
+	height: 52px;
+}
+
+/* Academic Book Page */
+
+/* Book Page */
+
+.praisediv div
+{
+	line-height: 17px;
+}
+
+/* Book Page */

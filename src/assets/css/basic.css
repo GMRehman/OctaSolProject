@@ -1,0 +1,76 @@
+/* Macmillan - basic.css
+---------------------------------------*/
+
+body {
+  background:#f6f4eb url(/imgs/global/bgWhiteTanBg.gif) top center repeat-x;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#000;
+  }
+
+* {
+  margin:0;
+  padding:0;
+  }
+
+a {
+  color:#0073a3;
+  text-decoration:none;
+  }
+  
+a:hover {
+	color:#01364c;
+}
+
+
+img {
+  border:none;
+  text-decoration:none;
+  }
+
+form {
+  margin:0;
+  padding:0;
+  }
+
+input {
+  margin:0;
+  padding:0;
+  }
+
+p {
+  line-height:17px;
+  margin:0 0 1em 0;
+  }
+
+
+.clear {
+  clear:both;
+  }
+
+.floatLeft {
+  float:left;
+  }
+
+.floatRight {
+  float:right;
+  }
+
+.right {
+  text-align:right;
+  }
+
+.strike {
+  text-decoration:line-through;
+  }
+
+#wrapper {
+	width:900px;
+	margin-right:auto;
+	margin-left:auto; 
+}
+
+img.pngImage { 
+  behavior:url(/js/iepngfix.htc); 
+  z-index:999;
+}
